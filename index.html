@@ -9,6 +9,7 @@
     <title>Smithed (Prototype)</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <link href="assets/styles/reset.css" rel="stylesheet" />
+    <link href="assets/styles/main.css" rel="stylesheet" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +17,115 @@
 </head>
 
 <body>
+    <header>
+        <div id="header-branding">
+            <!-- icon: smithed_logo -->
+            <svg class="icon-32" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                fill="currentColor">
+                <path
+                    d="m13.562 0.45703c-0.55832 1.687e-5 -1.1163 0.086877-1.6543 0.25977l-9.6426 3.0977 16.17 5.2031 11.305-3.6348-14.523-4.666c-0.538-0.17286-1.096-0.25978-1.6543-0.25977zm-13.42 5.4043v5.293c-6e-6 0.5586 0.17687 1.1033 0.50586 1.5547s0.79248 0.78603 1.3242 0.95703l16.463 5.2949 11.598-3.7227c0.5318-0.1707 0.99512-0.50573 1.3242-0.95703 0.329-0.4512 0.50586-0.99619 0.50586-1.5547v-5.293l-13.418 4.2539-18.303-5.8262zm4.4707 18.437v3.2461l13.826 4.4414 8.9531-2.873v-3.2578l-8.9512 2.8184-13.828-4.375z" />
+                <path d="m9.4934 18.816 8.9474 2.8233 4.4762-1.3837v4.1201l-4.4761 1.4347-8.9475-2.8744z"
+                    opacity="0.5" />
+            </svg>
+            <a href="">Smithed</a>
+        </div>
+        <a class="widget-button kind-header">Browse</a>
+        <a class="widget-button kind-header">Articles</a>
+        <a class="widget-button kind-header">
+            <span>Weld</span>
+            <!-- icon: popout -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                <path
+                    d="m5 2c-1.662 0-3 1.338-3 3v6c0 1.662 1.338 3 3 3h6c1.662 0 3-1.338 3-3v-1h-2v1c0 0.554-0.446 1-1 1h-6c-0.554 0-1-0.446-1-1v-6c0-0.554 0.446-1 1-1h1v-2h-1zm3 0v2h2.5859l-3.293 3.293a1 1 0 0 0 0 1.4141 1 1 0 0 0 1.4141 0l3.293-3.293v2.5859h2v-3c0-1.662-1.338-3-3-3h-3z" />
+            </svg>
+        </a>
+        <!-- component: search_bar -->
+        <div class="widget-container fill-width">
+            <input class="widget-input kind-search fill-width" id="search_bar" type="search" placeholder="Search..." />
+            <label for="search_bar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                    <path
+                        d="m10 7a3 3 0 0 1-3 3 3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3zm-3-5a5 5 0 0 0-5 5 5 5 0 0 0 5 5 5 5 0 0 0 2.7539-0.83203l2.5391 2.5391c0.39052 0.39052 1.0235 0.39052 1.4141 0 0.39052-0.39052 0.39052-1.0235 0-1.4141l-2.5391-2.5391a5 5 0 0 0 0.83203-2.7539 5 5 0 0 0-5-5z"
+                        fill-rule="evenodd" />
+                </svg>
+            </label>
+        </div>
+        <!-- end component -->
+        <a class="widget-button kind-header">
+            <!-- icon: folder -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                <path
+                    d="m3 5h10c0.554 0 1 0.446 1 1v6c0 0.554-0.446 1-1 1h-10c-0.554 0-1-0.446-1-1v-6c0-0.554 0.446-1 1-1zm0-4c-1.6274 0-3 1.3726-3 3v8c0 1.6274 1.3726 3 3 3h10c1.6274 0 3-1.3726 3-3v-6c0-1.6274-1.3726-3-3-3h-4l-2-2z"
+                    fill-rule="evenodd" />
+            </svg>
+        </a>
+        <button class="widget-button kind-dropdown">
+            <img src="https://api.smithed.dev/v2/users/7QJuo5oUL6aUm6vei7QU7z3iLgJ2/pfp?size=32" alt="pfp" width="32" />
+            <span>BubbleFish</span>
+            <!-- icon: arrow_down -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                <path
+                    d="m3.7082 5.292c-0.39173-0.39174-1.0243-0.39174-1.416 0-0.39174 0.39174-0.39174 1.0243 0 1.416l5.707 5.7051 5.707-5.7051c0.39174-0.39174 0.39174-1.0243 0-1.416-0.39173-0.39174-1.0243-0.39174-1.416 0l-4.291 4.293z" />
+            </svg>
+        </button>
+    </header>
+
+    <main>
+        <div>
+            <h1>Welcome!</h1>
+            <span>
+                Smithed is an open-source platform for exploring, sharing <br />
+                and supercharging minecraft data & resource packs.
+            </span>
+        </div>
+    </main>
+
+    <footer>
+        <section>
+            <div id="footer-branding">
+                <!-- icon: smithed_logo -->
+                <svg class="icon-64" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 32 32"
+                    fill="currentColor">
+                    <path
+                        d="m13.562 0.45703c-0.55832 1.687e-5 -1.1163 0.086877-1.6543 0.25977l-9.6426 3.0977 16.17 5.2031 11.305-3.6348-14.523-4.666c-0.538-0.17286-1.096-0.25978-1.6543-0.25977zm-13.42 5.4043v5.293c-6e-6 0.5586 0.17687 1.1033 0.50586 1.5547s0.79248 0.78603 1.3242 0.95703l16.463 5.2949 11.598-3.7227c0.5318-0.1707 0.99512-0.50573 1.3242-0.95703 0.329-0.4512 0.50586-0.99619 0.50586-1.5547v-5.293l-13.418 4.2539-18.303-5.8262zm4.4707 18.437v3.2461l13.826 4.4414 8.9531-2.873v-3.2578l-8.9512 2.8184-13.828-4.375z" />
+                    <path d="m9.4934 18.816 8.9474 2.8233 4.4762-1.3837v4.1201l-4.4761 1.4347-8.9475-2.8744z"
+                        opacity="0.5" />
+                </svg>
+                <div>
+                    <h1>Smithed</h1>
+                    <span>
+                        The platform for exploring, sharing and <br />
+                        supercharging minecraft data & resource packs.
+                    </span>
+                </div>
+            </div>
+            <span></span>
+            <div class="footer-section">
+                <h1>ABOUT</h1>
+                <a href="">About Us</a>
+                <a href="">How to Contribute</a>
+                <a href="">Donate</a>
+            </div>
+            <span></span>
+            <div class="footer-section">
+                <h1>COMMUNITY</h1>
+                <a href="">Discord</a>
+                <a href="">Guidelines</a>
+                <a href="">Wiki</a>
+            </div>
+            <span></span>
+            <div class="footer-section">
+                <h1>LEGAL</h1>
+                <a href="">Terms of Use</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Cookies</a>
+            </div>
+        </section>
+        <div>
+            <b>Copyright © 2025 Smithed.</b>
+            <span>Not an official Minecraft product. Not approved by or associated with Mojang Studios</span>
+        </div>
+    </footer>
 </body>
 
 </html>

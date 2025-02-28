@@ -1,0 +1,220 @@
+:root {
+  --theme-shade: #000000;
+  --theme-background: #121212;
+  --theme-foreground: #ffffff;
+  --theme-card: rgba(255, 255, 255, 0.08);
+  --theme-inactive: rgba(255, 255, 255, 0.6);
+  --theme-border: #555555;
+  --palette-accent: #1b48c4;
+  --palette-neutral: #1faeff;
+  --palette-secondary: #b600c6;
+  --palette-warning: #da9d00;
+  --palette-success: #008f48;
+  --palette-disturbing: #c41b48;
+
+  --max-width: 70rem;
+}
+
+svg {
+  min-width: 1rem;
+  min-height: 1rem;
+}
+
+.icon-32 {
+  min-width: 2rem;
+  min-height: 2rem;
+}
+
+.icon-64 {
+  min-width: 4rem;
+  min-height: 4rem;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body,
+body > main,
+body > main > div,
+body > footer,
+#footer-branding > div,
+body > footer .footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+body > header,
+#header-branding,
+.widget-button,
+body > footer > section,
+#footer-branding {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.widget-button:focus,
+.widget-input:focus {
+  outline: 2px solid var(--theme-foreground);
+  color: var(--theme-foreground);
+}
+
+body {
+  gap: 4rem;
+  background-color: var(--theme-background);
+  color: var(--theme-foreground);
+
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+body > header,
+body > main {
+  width: min(100vw - 2rem, var(--max-width));
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+body > header {
+  gap: 2rem;
+  padding: 0.5rem 0;
+}
+
+body > main {
+  gap: 4rem;
+}
+
+body > main > div {
+  text-align: center;
+  gap: 0.5rem;
+}
+
+body > main h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+body > main span {
+  line-height: 1.25;
+}
+
+body > footer {
+  background-color: var(--theme-shade);
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+body > footer > section {
+  justify-content: center;
+  gap: 2rem;
+  width: min(100vw - 2rem, var(--max-width));
+  margin: 0 auto;
+}
+
+body > footer > section > span {
+  flex-grow: 1;
+}
+
+body > footer .footer-section {
+  text-align: center;
+  gap: 1rem;
+}
+
+body > footer .footer-section a {
+  color: inherit;
+}
+
+body > footer > div {
+  opacity: 0.25;
+  text-align: center;
+}
+
+body > footer > div b {
+  font-weight: 600;
+}
+
+#header-branding {
+  gap: 1rem;
+}
+
+#header-branding a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+#footer-branding {
+  gap: 1rem;
+  line-height: 1.25;
+}
+
+#footer-branding > div h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+#footer-branding > div span {
+  font-size: 0.75rem;
+}
+
+.fill-width {
+  width: max-content;
+}
+
+.widget-container {
+  position: relative;
+}
+
+.widget-button {
+  border: none;
+  background-color: transparent;
+  color: inherit;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: 400;
+  border-radius: 0.5rem;
+}
+
+.widget-button.kind-header:hover {
+  text-decoration: underline;
+}
+
+.widget-button img {
+  border-radius: 0.5rem;
+}
+
+.widget-button.kind-dropdown {
+  gap: 1rem;
+}
+
+.widget-input {
+  border: none;
+  background-color: var(--theme-card);
+  color: var(--theme-inactive);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-weight: 400;
+}
+
+.widget-input.kind-search {
+  padding-left: 2.5rem;
+}
+
+.widget-input.kind-search + label {
+  position: absolute;
+  left: 0.5rem;
+  top: 0.5rem;
+  margin: 2px;
+  color: var(--theme-inactive);
+}
+
+.widget-input.kind-search:focus + label {
+  color: var(--theme-foreground);
+}
