@@ -177,6 +177,10 @@ h2 {
     font-size: 1.5rem;
 }
 
+h3 {
+    font-size: 1.25rem;
+}
+
 img {
     border-radius: 0.5rem;
 }
@@ -248,6 +252,98 @@ hr {
                 width: 2rem;
                 height: 2rem;
             }
+        }
+    }
+}
+
+.pack-cards {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2rem;
+}
+
+.pack-card {
+    .border();
+    transition: 100ms background-color;
+    position: relative;
+    background-color: var(--theme-card);
+    text-decoration: none;
+    color: inherit;
+    border-radius: 1rem;
+    cursor: pointer;
+
+    &>header {
+        position: absolute;
+        top: -1rem;
+        right: -0.5rem;
+
+        &>div {
+            .flex-row-center();
+            gap: 0.5rem;
+            font-weight: 700;
+            padding: 0.375rem 0.75rem;
+            border-radius: 1rem;
+            font-size: 0.75rem;
+            border: 0.25rem solid var(--theme-shade);
+            transform: rotate(5deg);
+
+            svg {
+                width: 0.75rem;
+                height: 0.75rem;
+            }
+
+            &.label-trending {
+                background-color: var(--palette-disturbing);
+            }
+
+            &.label-new {
+                background-color: var(--palette-accent);
+            }
+        }
+    }
+
+    &>img {
+        border-radius: 1rem 1rem 0 0;
+        border: 0.25rem solid var(--theme-shade);
+    }
+
+    &>footer {
+        .flex-column-stretch();
+        gap: 0.5rem;
+        padding: 0.5rem 1rem 1rem 1rem;
+
+        .bullet {
+            width: 0.25rem;
+            height: 0.25rem;
+            border-radius: 1rem;
+            background-color: var(--theme-inactive);
+        }
+
+        &>section {
+            .flex-row-center();
+            gap: 0.5rem;
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--theme-inactive);
+
+            svg {
+                width: 0.75rem;
+                height: 0.75rem;
+            }
+        }
+
+        &>div {
+            .flex-column-stretch();
+            gap: 0.25rem;
+        }
+    }
+
+    &:hover {
+        background-color: var(--theme-hover);
+        text-decoration: none;
+
+        h3 {
+            text-decoration: underline;
         }
     }
 }
