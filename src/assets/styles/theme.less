@@ -1,0 +1,261 @@
+@import "./reset.less";
+@import "./widgets.less";
+
+:root {
+    --theme-shade: #000000;
+    --theme-background: #121212;
+    --theme-card: rgb(255 255 255 / 0.06);
+    --theme-hover: rgb(255 255 255 / 0.12);
+    --theme-inactive: rgb(255 255 255 / 0.33);
+    --theme-border: #424242;
+    --theme-cavity: rgb(0 0 0 / 0.25);
+    --theme-foreground: #ffffff;
+
+    --palette-accent: #1b48c4;
+    --palette-accent-light: #1faeff;
+    --palette-secondary: #b000bf;
+    --palette-secondary-light: #b000bf;
+    --palette-warning: #da9d00;
+    --palette-warning-light: #da9d00;
+    --palette-success: #008f48;
+    --palette-success-light: #008f48;
+    --palette-disturbing: #c41b48;
+    --palette-disturbing-light: #ff4f4f;
+
+    --size-screen-max: 70rem;
+    --size-screen-min: 24rem;
+    --size-screen-content: 50rem;
+}
+
+.flex-row-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+
+.flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.flex-column-stretch {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: start;
+}
+
+.reset {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+
+.focus {
+    outline: 2px solid var(--theme-foreground);
+}
+
+.border {
+    border: 1px solid var(--theme-border);
+}
+
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    .reset();
+    .flex-column-center();
+    gap: 4rem;
+
+    background-color: var(--theme-background);
+    color: var(--theme-foreground);
+    width: 100%;
+    text-rendering: optimizeLegibility;
+
+    font-family: Lexend, system-ui, -apple-system, BlinkmacSystemFont, sans-serif;
+    font-weight: 300;
+
+    &>header {
+        width: min(100% - 2rem, var(--size-screen-max));
+    }
+
+    &>section {
+        .flex-column-center();
+        width: min(100% - 2rem, var(--size-screen-content));
+
+        &.separator {
+            flex-direction: row;
+            gap: 1rem;
+        }
+    }
+
+    &>header {
+        .flex-row-center();
+        gap: 1rem;
+        padding: 0.5rem 0;
+
+        &>a {
+            gap: 0.5rem;
+        }
+
+        &>input {
+            flex: 1;
+        }
+
+        &>button {
+            border-radius: 0.5rem;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &>footer {
+        .flex-column-center();
+        gap: 4rem;
+        background-color: var(--theme-shade);
+        width: 100%;
+        padding: 4rem 0;
+
+        &>section {
+            .flex-row-center();
+            width: min(100% - 2rem, var(--size-screen-content));
+
+            section {
+                .flex-column-center();
+                gap: 0.5rem;
+                flex-grow: 1;
+
+                a {
+                    color: inherit;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        &>div {
+            .flex-column-center();
+            gap: 0.5rem;
+
+            span {
+                color: var(--theme-border);
+            }
+        }
+    }
+}
+
+svg {
+    min-width: 1rem;
+    aspect-ratio: 1 / 1;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: Rubik, system-ui, -apple-system, BlinkmacSystemFont, sans-serif;
+    font-weight: 700;
+    line-height: 1;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+img {
+    border-radius: 0.5rem;
+}
+
+input[type="text"] {
+    .reset();
+    background-color: var(--theme-card);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 400;
+
+    &::placeholder {
+        opacity: 0.5;
+    }
+
+    &:focus {
+        .focus();
+    }
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    line-height: 1.25;
+}
+
+b {
+    font-weight: 600;
+}
+
+hr {
+    .reset();
+    flex: 1;
+    min-height: 2px;
+    background-color: var(--theme-border);
+
+    &.vertical {
+        background-color: var(--theme-foreground);
+        opacity: 0.33;
+        min-width: 2px;
+        min-height: 1rem;
+    }
+}
+
+#landing-cards {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2rem;
+
+    article {
+        .flex-column-stretch();
+        .border();
+        gap: 1rem;
+        border-radius: 1rem;
+        background-color: var(--theme-card);
+        padding: 1rem;
+
+        header {
+            .flex-row-center();
+            gap: 1rem;
+
+            &>.w-button {
+                margin-left: auto;
+            }
+
+            &>svg {
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+    }
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.centered {
+    text-align: center;
+}

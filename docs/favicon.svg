@@ -1,0 +1,14 @@
+<svg width="16" height="16" version="1.1" viewBox="0 0 4 4" xmlns="http://www.w3.org/2000/svg">
+	<g>
+		<g fill="#fff">
+			<path transform="matrix(1.3713 0 0 1.3713 -.74255 -.78291)" d="m1.7757 0.57984a0.49739 0.49739 0 0 0-0.1524 0.023857l-0.88663 0.28486 1.487 0.47821 0.0032047-0.0010682c-0.028656-0.077632-0.04451-0.16107-0.04451-0.24783 0-0.1446 0.043655-0.28033 0.11822-0.39453l-0.37281-0.11964a0.49739 0.49739 0 0 0-0.15205-0.023857z" style="paint-order:stroke fill markers"/>
+			<path transform="matrix(1.3713 0 0 1.3713 -.74255 -.78291)" d="m2.2243 1.6125-1.6828-0.5359v0.48676a0.24264 0.24264 0 0 0 0.16842 0.23109l1.5137 0.48676 7.121e-4 -3.561e-4v-0.66836z" style="paint-order:stroke fill markers"/>
+			<path transform="matrix(1.3713 0 0 1.3713 -.74255 -.78291)" d="m2.3458 1.574-0.12107 0.038456h-3.561e-4v0.66836l1.0657-0.34184a0.24251 0.24251 0 0 0 0.16842-0.23109v-0.11145c-0.13434 0.15296-0.33057 0.25068-0.54694 0.25068-0.22679 0-0.43137-0.10728-0.56581-0.27311z" opacity=".66" style="paint-order:stroke fill markers"/>
+			<path d="m2.3076 2.6821-1.1284-0.35596v0.51953l1.1284 0.36279v-0.52637z" opacity=".33" style="paint-order:stroke fill markers"/>
+			<path d="m2.3076 2.6821v0.52637l0.56445-0.18115v-0.51953l-0.56445 0.17432z" opacity=".66" style="paint-order:stroke fill markers"/>
+			<path transform="matrix(1.3713 0 0 1.3713 -.74255 -.78291)" d="m2.2243 3.1746-1.2719-0.40237v0.29839l1.2719 0.40842v-0.30445z" style="paint-order:stroke fill markers"/>
+			<path transform="matrix(1.3713 0 0 1.3713 -.74255 -.78291)" d="m2.2243 3.1746v0.30445l0.82325-0.26421v-0.29946l-0.82325 0.25922z" opacity=".66" style="paint-order:stroke fill markers"/>
+		</g>
+		<path d="m3.75 0.75a0.5 0.5 0 0 1-0.5 0.5 0.5 0.5 0 0 1-0.5-0.5 0.5 0.5 0 0 1 0.5-0.5 0.5 0.5 0 0 1 0.5 0.5z" color="#000000" color-rendering="auto" dominant-baseline="auto" fill="#f00" image-rendering="auto" shape-rendering="auto" solid-color="#000000" stop-color="#000000" style="-inkscape-stroke:none;font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;font-variation-settings:normal;inline-size:0;isolation:auto;mix-blend-mode:normal;paint-order:stroke fill markers;shape-margin:0;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+	</g>
+</svg>

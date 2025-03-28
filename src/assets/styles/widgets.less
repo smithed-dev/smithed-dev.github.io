@@ -1,0 +1,40 @@
+.w-button,
+.logotype {
+    .reset();
+    .flex-row-center();
+
+    background-color: transparent;
+    padding: 0.5rem 1rem;
+    font-weight: 400;
+    cursor: pointer;
+
+    &:focus {
+        .focus();
+    }
+}
+
+button.w-button,
+.logotype {
+    gap: 1rem;
+}
+
+a.w-button {
+    border-radius: 0.5rem;
+
+    &:hover {
+        background-color: var(--theme-card);
+    }
+}
+
+button.w-button {
+    border-radius: 1rem;
+    line-height: 1;
+
+    &.accent {
+        background-color: var(--palette-accent);
+    }
+
+    &:hover {
+        background-color: var(--theme-hover);
+    }
+}
