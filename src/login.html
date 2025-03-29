@@ -7,7 +7,7 @@
     </section>
 
     <section class="login">
-        <mend:include src="components/logo.svg" :size="128" />
+        <mend:include src="components/logo.svg" :size="128" @class="adapt-hide-mobile" />
         <section>
             <mend:extend src="components/field.html" :name="email" :help="Provide a valid email address">
                 <mend:include src="components/icons/symbol_at.svg" />

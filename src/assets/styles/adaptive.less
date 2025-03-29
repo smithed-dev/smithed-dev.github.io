@@ -44,6 +44,10 @@
     }
   }
 
+  body>main {
+    align-items: center;
+  }
+
   .layout-cards {
     grid-template-columns: auto;
 
@@ -51,6 +55,11 @@
       max-width: var(--size-screen-min);
       margin: 0 auto;
     }
+  }
+
+  main section.login {
+    padding: 0;
+    max-width: 30rem;
   }
 }
 
@@ -74,5 +83,9 @@
       display: grid;
       grid-template-columns: auto auto;
     }
+  }
+
+  main section.login section:last-child {
+    flex-direction: column;
   }
 }
