@@ -1,0 +1,70 @@
+@media only screen and (max-width: 72rem) {
+  .adapt-hide-widescreen {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 52rem) {
+  .adapt-hide-mobile {
+    display: none;
+  }
+
+  .adapt-show-mobile {
+    display: initial;
+  }
+
+  body>header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+    grid-template-areas:
+      "empty logotype logotype account"
+      "browse articles weld inbox"
+      "search search search search";
+  }
+
+  body>footer {
+    &>div {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-areas:
+        "about"
+        "community"
+        "legal"
+        "footnote";
+    }
+  }
+
+  .layout-cards {
+    grid-template-columns: auto;
+
+    &>* {
+      max-width: var(--size-screen-min);
+      margin: 0 auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 27rem) {
+  .adapt-hide-min {
+    display: none;
+  }
+
+  body>header {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "logotype account"
+      "browse articles"
+      "weld inbox"
+      "search search";
+  }
+
+  .pack-card {
+    footer>.pack-card-meta {
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+  }
+}
