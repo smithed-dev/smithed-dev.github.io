@@ -83,19 +83,33 @@
 }
 
 .w-button {
-    background-color: var(--theme-card);
+    background-color: transparent;
     padding: 0.5rem 1rem;
     border-radius: 1rem;
+
+    span {
+        flex: 1;
+        text-align: left;
+    }
 
     hr {
         background-color: var(--theme-foreground);
         opacity: 0.33;
         min-width: 2px;
+        max-width: 2px;
         height: 1rem;
     }
 
     &.accent {
         background-color: var(--palette-accent);
+    }
+
+    &.disturbing {
+        color: var(--palette-disturbing);
+
+        hr {
+            background-color: var(--palette-disturbing);
+        }
     }
 
     &:focus {
@@ -257,5 +271,56 @@ input[type="text"] {
 
     .rating-positive {
         color: var(--palette-success);
+    }
+}
+
+.w-dropdown {
+    position: relative;
+
+    .w-dropdown-menu {
+        .bordered();
+        .flex-column-stretch();
+        display: none;
+        position: absolute;
+        background-color: var(--theme-shade);
+        padding: 0.5rem;
+        border-radius: 1rem;
+        width: max-content;
+        top: 3rem;
+
+        .w-button {
+            border-radius: 0.5rem;
+        }
+
+        &::before,
+        &::after {
+            --size: 1rem;
+            position: absolute;
+            top: -1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            content: "";
+            display: block;
+            width: 0;
+            height: 0;
+            border-left: var(--size, 1rem) solid transparent;
+            border-right: var(--size, 1rem) solid transparent;
+            border-bottom: var(--size, 1rem) solid var(--theme-shade);
+        }
+
+        &::before {
+            --size: calc(1rem + 2px);
+            top: calc(-1rem - 2px);
+            border-left: var(--size, 1rem) solid transparent;
+            border-right: var(--size, 1rem) solid transparent;
+            border-bottom: var(--size, 1rem) solid var(--theme-border);
+            z-index: -1;
+        }
+    }
+
+    &.open {
+        .w-dropdown-menu {
+            display: initial;
+        }
     }
 }

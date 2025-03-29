@@ -13,6 +13,7 @@
         <link
             href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&family=Lexend:wght@100..900&family=Rubik:wght@700&display=swap"
             rel="stylesheet" />
+        <script src="/assets/script.js" defer></script>
     </head>
 
     <body>
@@ -50,11 +51,30 @@
                 <mend:include src="components/icons/notification.svg" />
             </mend:extend>
 
-            <button class="w-header-dropdown" style="grid-area: account;">
-                <img src="/assets/images/bbfh.jpg" width="32" height="32" alt="logo" />
-                <span class="adapt-hide-widescreen">BubbleFish</span>
-                <mend:include src="components/icons/angle_down.svg" />
-            </button>
+            <div class="w-dropdown" style="grid-area: account;">
+                <button class="w-header-dropdown" style="grid-area: account;" onclick="openDropdown(this);">
+                    <img src="/assets/images/bbfh.jpg" width="32" height="32" alt="logo" />
+                    <span class="adapt-hide-widescreen">BubbleFish</span>
+                    <mend:include src="components/icons/angle_down.svg" />
+                </button>
+                <footer class="w-dropdown-menu" data-prefer="right">
+                    <mend:extend src="components/dropdown/item.html" :label="My profile">
+                        <mend:include src="components/icons/user.svg" />
+                    </mend:extend>
+                    <mend:extend src="components/dropdown/item.html" :label="New pack">
+                        <mend:include src="components/icons/new_file.svg" />
+                    </mend:extend>
+                    <mend:extend src="components/dropdown/item.html" :label="New bundle">
+                        <mend:include src="components/icons/new_folder.svg" />
+                    </mend:extend>
+                    <mend:extend src="components/dropdown/item.html" :label="Settings">
+                        <mend:include src="components/icons/properties.svg" />
+                    </mend:extend>
+                    <mend:extend src="components/dropdown/item.html" :label="Log out" @class="w-button disturbing">
+                        <mend:include src="components/icons/angle_right.svg" />
+                    </mend:extend>
+                </footer>
+            </div>
         </header>
 
         <main>
