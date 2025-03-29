@@ -1,0 +1,49 @@
+<mend:extend src="root.html">
+    <section class="content">
+        <h1>Welcome to Smithed</h1>
+        <p class="centered">
+            Create a new account
+        </p>
+    </section>
+
+    <section class="login">
+        <mend:include src="components/logo.svg" :size="128" @class="adapt-hide-mobile" />
+        <section>
+            <mend:extend src="components/field.html" :name="username"
+                :help="Will be both the handle and the display name of your profile">
+                <mend:include src="components/icons/user.svg" />
+                <input type="text" placeholder="Username" />
+            </mend:extend>
+            <mend:extend src="components/field.html" :name="email" :help="Provide a valid email address">
+                <mend:include src="components/icons/symbol_at.svg" />
+                <input type="text" placeholder="example@smithed.net" />
+            </mend:extend>
+            <mend:extend src="components/field.html" :name="password"
+                :help="The password you used to create your account">
+                <mend:include src="components/icons/key.svg" />
+                <input type="password" placeholder="Password" />
+            </mend:extend>
+            <mend:extend src="components/field.html" :name="confirm password"
+                :help="Write the same password again to ensure you haven't made a typo">
+                <mend:include src="components/icons/key.svg" />
+                <input type="password" placeholder="Confirm password" />
+            </mend:extend>
+            <section>
+                <mend:extend src="components/button/centered.html" :label="GitHub login" @style="flex: 1;">
+                    <mend:include src="components/github.svg" />
+                </mend:extend>
+                <mend:extend src="components/button/accent.html" :label="Sign up">
+                    <mend:include src="components/icons/angle_right.svg" />
+                </mend:extend>
+            </section>
+            <hr />
+            <section>
+                <a href="" class="not-important">Need help?</a>
+                <span class="bullet adapt-hide-min"></span>
+                <a href="" class="not-important">Privacy Policy</a>
+                <span class="bullet adapt-hide-min"></span>
+                <a href="/login.html">Login</a>
+            </section>
+        </section>
+    </section>
+</mend:extend>

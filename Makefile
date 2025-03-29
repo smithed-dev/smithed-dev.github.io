@@ -5,6 +5,7 @@ build:
 
 	@mend -i '{"checksum":"$(shell md5sum ./docs/assets/styles.min.css | cut -d ' ' -f1)", "logged_in": true}' ./src/index.html > ./docs/index.html
 	@mend -i '{"checksum":"$(shell md5sum ./docs/assets/styles.min.css | cut -d ' ' -f1)", "logged_in": false}' ./src/login.html > ./docs/login.html
+	@mend -i '{"checksum":"$(shell md5sum ./docs/assets/styles.min.css | cut -d ' ' -f1)", "logged_in": false}' ./src/register.html > ./docs/register.html
 	@echo "Finished building"
 
 watch:
