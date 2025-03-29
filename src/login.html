@@ -1,0 +1,42 @@
+<mend:extend src="root.html">
+    <section class="content">
+        <h1>Welcome back!</h1>
+        <p class="centered">
+            Login into your Smithed account
+        </p>
+    </section>
+
+    <section class="login">
+        <mend:include src="components/logo.svg" :size="128" />
+        <section>
+            <mend:extend src="components/field.html" :name="email" :help="Provide a valid email address">
+                <mend:include src="components/icons/symbol_at.svg" />
+                <input type="text" placeholder="example@smithed.net" />
+            </mend:extend>
+            <mend:extend src="components/field.html" :name="password"
+                :help="The password you used to create your account">
+                <mend:include src="components/icons/key.svg" />
+                <input type="password" placeholder="Password" />
+            </mend:extend>
+            <section>
+                <span class="gap"></span>
+                <input id="stay-logged-in" type="checkbox" />
+                <label for="stay-logged-in">Stay logged in?</label>
+                <mend:extend src="components/button/accent.html" :label="Login">
+                    <mend:include src="components/icons/angle_right.svg" />
+                </mend:extend>
+            </section>
+            <hr />
+            <mend:extend src="components/button/centered.html" :label="GitHub login">
+                <mend:include src="components/github.svg" />
+            </mend:extend>
+            <section>
+                <a href="" class="not-important">Need help?</a>
+                <span class="bullet adapt-hide-min"></span>
+                <a href="" class="not-important">Privacy Policy</a>
+                <span class="bullet adapt-hide-min"></span>
+                <a href="/register.html">Create an account</a>
+            </section>
+        </section>
+    </section>
+</mend:extend>

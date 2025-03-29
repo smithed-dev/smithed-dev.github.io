@@ -20,3 +20,8 @@ window.addEventListener(
     });
   },
 );
+
+/** @param {HTMLButtonElement} node */
+function showHelp(node) {
+  alert(node.dataset.help);
+}

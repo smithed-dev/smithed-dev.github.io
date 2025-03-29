@@ -196,10 +196,10 @@ h6 {
 .w-input input {
   width: 100%;
 }
-.w-input input:focus {
+.w-input input.with-helper:focus {
   border-radius: 0.5rem 0.5rem 0 0;
 }
-.w-input input:focus + footer {
+.w-input input.with-helper:focus + footer {
   display: flex;
 }
 .w-input footer {
@@ -258,6 +258,13 @@ h6 {
 .w-button.disturbing hr {
   background-color: var(--palette-disturbing);
 }
+.w-button.centered {
+  background-color: var(--theme-card);
+}
+.w-button.centered span {
+  text-wrap: nowrap;
+  flex: 0;
+}
 .w-button:focus {
   outline: 2px solid var(--theme-foreground);
   text-decoration: none;
@@ -265,6 +272,12 @@ h6 {
 .w-button:hover {
   background-color: var(--theme-hover);
   text-decoration: none;
+}
+.bullet {
+  width: 0.25rem;
+  height: 0.25rem;
+  border-radius: 1rem;
+  background-color: var(--theme-foreground);
 }
 hr {
   border: none;
@@ -275,7 +288,8 @@ hr {
   min-height: 2px;
   background-color: var(--theme-border);
 }
-input[type="text"] {
+input[type="text"],
+input[type="password"] {
   border: none;
   outline: none;
   text-decoration: none;
@@ -291,18 +305,34 @@ input[type="text"] {
   min-width: 6rem;
   padding-left: 3rem;
 }
-input[type="text"]:hover {
+input[type="text"]:hover,
+input[type="password"]:hover {
   background-color: var(--theme-hover);
 }
-input[type="text"]:focus {
+input[type="text"]:focus,
+input[type="password"]:focus {
   outline: 2px solid var(--theme-foreground);
 }
-input[type="text"]::placeholder {
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
   font-weight: 400;
   opacity: 0.5;
 }
-input[type="text"] + label {
+input[type="text"] + label,
+input[type="password"] + label {
   position: absolute;
+}
+input[type="password"] {
+  font-family: caption;
+}
+input[type="password"]::placeholder {
+  font-family: Lexend, sans-serif;
+}
+input[type="checkbox"] + label {
+  font-weight: 400;
+}
+.gap {
+  margin: auto;
 }
 .landing-card {
   display: flex;
@@ -386,9 +416,6 @@ input[type="text"] + label {
   padding: 0.5rem 1rem 1rem 1rem;
 }
 .pack-card > footer .bullet {
-  width: 0.25rem;
-  height: 0.25rem;
-  border-radius: 1rem;
   background-color: var(--theme-inactive);
 }
 .pack-card > footer > section {
@@ -463,6 +490,22 @@ input[type="text"] + label {
 .w-dropdown.open .w-dropdown-menu {
   display: initial;
 }
+.w-field {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: start;
+}
+.w-field header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+.w-field header .w-button {
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
 :root {
   --theme-shade: #000000;
   --theme-background: #121212;
@@ -536,6 +579,48 @@ body > main .content {
   justify-content: start;
   gap: 0.5rem;
 }
+body > main .login {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  padding: 0 6rem;
+  gap: 4rem;
+}
+body > main .login > section {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: start;
+  flex: 1;
+  gap: 1rem;
+}
+body > main .login > section > section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+body > main .login > section > section > a {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+body > main .login > section > section > a:hover,
+body > main .login > section > section > a:focus {
+  text-decoration: underline;
+}
+body > main .login > section > section > a:focus {
+  outline: none;
+  border: none;
+}
+body > main .login > section > section > a.not-important {
+  color: var(--theme-inactive);
+}
+body > main .login > section > hr {
+  background-color: var(--theme-card);
+}
 body > footer {
   display: flex;
   flex-direction: column;
@@ -605,6 +690,9 @@ h1 {
 }
 h2 {
   font-size: 1.5rem;
+}
+h4 {
+  font-size: 0.75rem;
 }
 p {
   line-height: 1.25;

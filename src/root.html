@@ -31,7 +31,7 @@
 
             <div class="w-input" style="grid-area: search;">
                 <mend:include src="components/icons/search.svg" />
-                <input id="search" type="text" placeholder="Search..." />
+                <input class="with-helper" type="text" placeholder="Search..." />
                 <footer>
                     <div>
                         Searches for <b>packs</b> by default
@@ -51,30 +51,38 @@
                 <mend:include src="components/icons/notification.svg" />
             </mend:extend>
 
-            <div class="w-dropdown" style="grid-area: account;">
-                <button class="w-header-dropdown" style="grid-area: account;" onclick="openDropdown(this);">
-                    <img src="/assets/images/bbfh.jpg" width="32" height="32" alt="logo" />
-                    <span class="adapt-hide-widescreen">BubbleFish</span>
-                    <mend:include src="components/icons/angle_down.svg" />
-                </button>
-                <footer class="w-dropdown-menu" data-prefer="right">
-                    <mend:extend src="components/dropdown/item.html" :label="My profile">
-                        <mend:include src="components/icons/user.svg" />
-                    </mend:extend>
-                    <mend:extend src="components/dropdown/item.html" :label="New pack">
-                        <mend:include src="components/icons/new_file.svg" />
-                    </mend:extend>
-                    <mend:extend src="components/dropdown/item.html" :label="New bundle">
-                        <mend:include src="components/icons/new_folder.svg" />
-                    </mend:extend>
-                    <mend:extend src="components/dropdown/item.html" :label="Settings">
-                        <mend:include src="components/icons/properties.svg" />
-                    </mend:extend>
-                    <mend:extend src="components/dropdown/item.html" :label="Log out" @class="w-button disturbing">
-                        <mend:include src="components/icons/angle_right.svg" />
-                    </mend:extend>
-                </footer>
-            </div>
+            <mend:if value="{{ ^.logged_in }}">
+                <div class="w-dropdown" style="grid-area: account;">
+                    <button class="w-header-dropdown" style="grid-area: account;" onclick="openDropdown(this);">
+                        <img src="/assets/images/bbfh.jpg" width="32" height="32" alt="logo" />
+                        <span class="adapt-hide-widescreen">BubbleFish</span>
+                        <mend:include src="components/icons/angle_down.svg" />
+                    </button>
+                    <footer class="w-dropdown-menu" data-prefer="right">
+                        <mend:extend src="components/dropdown/item.html" :label="My profile">
+                            <mend:include src="components/icons/user.svg" />
+                        </mend:extend>
+                        <mend:extend src="components/dropdown/item.html" :label="New pack">
+                            <mend:include src="components/icons/new_file.svg" />
+                        </mend:extend>
+                        <mend:extend src="components/dropdown/item.html" :label="New bundle">
+                            <mend:include src="components/icons/new_folder.svg" />
+                        </mend:extend>
+                        <mend:extend src="components/dropdown/item.html" :label="Settings">
+                            <mend:include src="components/icons/properties.svg" />
+                        </mend:extend>
+                        <mend:extend src="components/dropdown/item.html" :label="Log out" @class="w-button disturbing"
+                            @href="/login.html">
+                            <mend:include src="components/icons/angle_right.svg" />
+                        </mend:extend>
+                    </footer>
+                </div>
+            </mend:if>
+            <mend:unless value="{{ ^.logged_in }}">
+                <mend:extend src="components/button/accent.html" :label="Login" @style="grid-area: account;">
+                    <mend:include src="components/icons/user.svg" />
+                </mend:extend>
+            </mend:unless>
         </header>
 
         <main>
