@@ -314,13 +314,13 @@ input[type="checkbox"]+label {
     .w-dropdown-menu {
         .bordered();
         .flex-column-stretch();
-        display: none;
         position: absolute;
         background-color: var(--theme-shade);
         padding: 0.5rem;
         border-radius: 1rem;
         width: max-content;
         top: 3rem;
+        display: none !important;
 
         .w-button {
             border-radius: 0.5rem;
@@ -345,7 +345,7 @@ input[type="checkbox"]+label {
 
     &.open {
         .w-dropdown-menu {
-            display: initial;
+            display: flex !important;
         }
     }
 }
