@@ -402,6 +402,9 @@ input[type="text"] + label {
 .pack-card:hover h3 {
   text-decoration: underline;
 }
+.pack-card:focus {
+  outline: 2px solid var(--theme-foreground);
+}
 .pack-card .rating-positive {
   color: var(--palette-success);
 }
