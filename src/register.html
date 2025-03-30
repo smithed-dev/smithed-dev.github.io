@@ -6,8 +6,8 @@
         </p>
     </section>
 
-    <section class="login">
-        <mend:include src="components/logo.svg" :size="128" @class="adapt-hide-mobile" />
+    <section class="l-login">
+        <mend:include src="components/logo.svg" :size="128" @class="a-hide-portrait" />
         <section>
             <mend:extend src="components/field.html" :name="username"
                 :help="Will be both the handle and the display name of your profile">
@@ -29,7 +29,7 @@
                 <input type="password" placeholder="Confirm password" />
             </mend:extend>
             <section>
-                <mend:extend src="components/button/centered.html" :label="GitHub login" @style="flex: 1;">
+                <mend:extend src="components/button/regular.html" :label="GitHub login" @style="flex: 1;">
                     <mend:include src="components/github.svg" />
                 </mend:extend>
                 <mend:extend src="components/button/accent.html" :label="Sign up">
@@ -39,9 +39,9 @@
             <hr />
             <section>
                 <a href="" class="not-important">Need help?</a>
-                <span class="bullet adapt-hide-min"></span>
+                <span class="w-bullet a-hide-min"></span>
                 <a href="" class="not-important">Privacy Policy</a>
-                <span class="bullet adapt-hide-min"></span>
+                <span class="w-bullet a-hide-min"></span>
                 <a href="/login.html">Login</a>
             </section>
         </section>

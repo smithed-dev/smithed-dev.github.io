@@ -1,195 +1,263 @@
-@import "./mixins.less";
 @import "./reset.less";
 @import "./widgets.less";
+@import "./layout.less";
+@import "./misc.less";
+
+@screen-max: 70rem;
+@screen-content: 50rem;
+@screen-portrait: 40rem;
+@min-width: 24rem;
+
+@spacing-v: 0.5rem;
+@spacing-h: 1rem;
+@spacing-header: 2rem;
+@spacing-content: 4rem;
+
+@radius-field: 0.5rem;
+@radius-block: 1rem;
 
 :root {
-    --theme-shade: #000000;
-    --theme-background: #121212;
-    --theme-card: rgb(255 255 255 / 0.06);
-    --theme-hover: rgb(255 255 255 / 0.12);
-    --theme-inactive: rgb(255 255 255 / 0.33);
-    --theme-border: #424242;
-    --theme-cavity: rgb(0 0 0 / 0.25);
-    --theme-foreground: #ffffff;
+  --theme-shade: #000000;
+  --theme-background: #121212;
+  --theme-card: rgb(255 255 255 / 0.06);
+  --theme-hover: rgb(255 255 255 / 0.12);
+  --theme-inactive: rgb(255 255 255 / 0.33);
+  --theme-border: #424242;
+  --theme-cavity: rgb(0 0 0 / 0.25);
+  --theme-foreground: #ffffff;
 
-    --palette-accent: #1b48c4;
-    --palette-accent-light: #1faeff;
-    --palette-secondary: #b000bf;
-    --palette-secondary-light: #b000bf;
-    --palette-warning: #da9d00;
-    --palette-warning-light: #da9d00;
-    --palette-success: #008f48;
-    --palette-success-light: #008f48;
-    --palette-disturbing: #c41b48;
-    --palette-disturbing-light: #ff4f4f;
-
-    --size-screen-max: 70rem;
-    --size-screen-min: 24rem;
-    --size-screen-content: 50rem;
+  --palette-accent: #1b48c4;
+  --palette-accent-light: #1faeff;
+  --palette-secondary: #b000bf;
+  --palette-secondary-light: #b000bf;
+  --palette-warning: #da9d00;
+  --palette-warning-light: #da9d00;
+  --palette-success: #008f48;
+  --palette-success-light: #008f48;
+  --palette-disturbing: #c41b48;
+  --palette-disturbing-light: #ff4f4f;
 }
 
+/* --- MIXINS --- */
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.reset {
+  border: none;
+  outline: none;
+  color: inherit;
+  text-decoration: none;
+}
+
+.font-main {
+  font-family: Lexend, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.font-title {
+  font-family: Rubik, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.font-mono {
+  font-family: "JetBrains Mono", monospace;
+}
+
+.width-max {
+  width: min(100vw - 4rem, @screen-max);
+}
+
+.width-content {
+  width: min(100vw - 4rem, @screen-content);
+}
+
+.interactable-text {
+  cursor: poiner;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+
+  &:focus {
+    color: var(--palette-accent-light);
+    outline: none;
+  }
+}
+
+.interactable-block {
+  transition: 100ms background-color;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: var(--theme-hover);
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      text-decoration: underline;
+    }
+  }
+
+  &:focus {
+    outline: 2px solid var(--theme-foreground);
+  }
+}
+
+.bordered {
+  border: 1px solid var(--theme-border);
+}
+
+/* --- GLOBAL --- */
+
 html {
-    scroll-behavior: smooth;
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 body {
-    .reset();
-    .flex-column-center();
-    gap: 4rem;
+  .reset();
+  .font-main();
+  .flex-col();
+  align-items: center;
+  gap: @spacing-content;
+  font-weight: 300;
 
-    background-color: var(--theme-background);
-    color: var(--theme-foreground);
-    text-rendering: optimizeLegibility;
+  background-color: var(--theme-background);
+  color: var(--theme-foreground);
+
+  &>header {
+    .flex-row();
+    .width-max();
+    align-items: center;
+    gap: @spacing-header;
+    font-weight: 400;
+    padding: @spacing-v 0;
+  }
+
+  &>main {
+    .flex-col();
+    .width-content();
+    align-items: center;
+    gap: @spacing-content;
+  }
+
+  &>footer {
+    .flex-col();
+    align-items: center;
     width: 100%;
+    background-color: var(--theme-shade);
+    padding: @spacing-content @spacing-header;
+    gap: @spacing-content;
 
-    font-family: Lexend, system-ui, -apple-system, BlinkmacSystemFont, sans-serif;
-    font-weight: 300;
-
-    &>header {
-        .width-max();
-        .flex-row-center();
-        gap: 1rem;
-        padding: 0.5rem 0;
-
-        .w-input {
-            flex: 1;
-        }
+    &>div {
+      width: min(100% - 4rem, @screen-content);
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      gap: @spacing-content;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "about community legal";
     }
 
-    &>main {
-        .flex-column-stretch();
-        .width-content();
-        gap: 4rem;
-        min-height: 20rem;
+    section {
+      .flex-col();
+      align-items: center;
+      gap: @spacing-h;
 
-        .content {
-            .flex-column-center();
-            gap: 0.5rem;
+      a {
+        .interactable-text();
+        color: inherit;
+        text-decoration: none;
+
+        &:focus {
+          color: var(--palette-accent-light);
         }
-
-        .login {
-            .flex-row-center();
-            padding: 0 6rem;
-            gap: 4rem;
-
-            &>section {
-                .flex-column-stretch();
-                flex: 1;
-                gap: 1rem;
-
-                &>section {
-                    .flex-row-middle();
-                    gap: 1rem;
-
-                    &>a {
-                        .interactable-text();
-                        color: inherit;
-                        text-decoration: none;
-                    }
-
-                    &>a.not-important {
-                        color: var(--theme-inactive);
-                    }
-                }
-
-                &>hr {
-                    background-color: var(--theme-card);
-                }
-            }
-        }
+      }
     }
 
-    &>footer {
-        .flex-column-center();
-        background-color: var(--theme-shade);
-        width: 100%;
-        padding: 4rem 0;
+    footer {
+      .flex-col();
+      align-items: center;
+      font-weight: 400;
+      text-align: center;
+      gap: @spacing-v;
 
-        &>div {
-            width: min(100% - 4rem, var(--size-screen-content));
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-            gap: 4rem;
-            grid-auto-flow: row;
-            grid-template-areas:
-                "about community legal"
-                "footnote footnote footnote";
-        }
-
-        section {
-            .flex-column-center();
-            gap: 1rem;
-
-            a {
-                .interactable-text();
-                color: inherit;
-                text-decoration: none;
-
-                &:focus {
-                    color: var(--palette-accent-light);
-                }
-            }
-        }
-
-        .footnote {
-            .flex-column-center();
-            font-weight: 400;
-            text-align: center;
-
-            span {
-                color: var(--theme-inactive);
-            }
-        }
+      p {
+        color: var(--theme-inactive);
+      }
     }
-}
-
-svg {
-    min-width: 1rem;
-    min-height: 1rem;
-    aspect-ratio: 1 / 1;
+  }
 }
 
 h1,
 h2,
 h3,
 h4 {
-    font-family: Rubik, system-ui, -apple-system, BlinkmacSystemFont, sans-serif;
-    font-weight: 700;
+  .font-title();
+  line-height: 1;
 }
 
 h1 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 h2 {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
 }
 
 h4 {
-    font-size: 0.75rem;
+  font-size: 0.75rem;
+}
+
+hr {
+  .reset();
+  .flex();
+  min-height: 2px;
+  background-color: var(--theme-hover);
 }
 
 p {
-    line-height: 1.25;
+  line-height: 1.25;
+}
+
+svg {
+  min-width: 1rem;
+  min-height: 1rem;
+}
+
+.flex {
+  flex: 1;
 }
 
 .centered {
-    text-align: center;
+  text-align: center;
 }
 
-.separator {
-    .flex-row-middle();
-    text-align: center;
-    gap: 1rem;
+.rating-positive {
+  color: var(--palette-success);
 }
 
-.layout-cards {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 2rem;
+.fill {
+  margin: auto;
 }
 
 @import "./adaptive.less";

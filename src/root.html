@@ -7,6 +7,8 @@
             Smithed™ (bbfh.me edition)
         </title>
 
+        <!-- The checksum is automatically generated,
+        it's just used to make sure the browser's cache gets updated when the file changes -->
         <link rel="stylesheet" href="/assets/styles.min.css?checksum={{ ^.checksum }}" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,21 +22,23 @@
         <header>
             <a href="/" class="w-logotype" style="grid-area: logotype;">
                 <mend:include src="components/logo.svg" :size="32" />
-                <h2 class="adapt-hide-widescreen adapt-show-mobile adapt-hide-min">Smithed</h2>
+                <h2 class="a-hide-widescreen a-show-portrait a-hide-min">Smithed</h2>
             </a>
 
             <mend:include src="components/button/header.html" :label="Browse" @style="grid-area: browse;" />
             <mend:include src="components/button/header.html" :label="Articles" @style="grid-area: articles;" />
             <mend:extend src="components/button/header.html" :label="Weld" @style="grid-area: weld;">
-                <mend:include src="components/icons/popout.svg" />
+                <mend:include src="components/icons/popout.svg" @class="a-hide-landscape a-show-portrait" />
             </mend:extend>
 
-            <div class="w-input" style="grid-area: search;">
-                <mend:include src="components/icons/search.svg" />
-                <input class="with-helper" type="text" placeholder="Search..." />
-                <footer>
+            <div class="w-input flex" style="grid-area: search;">
+                <mend:include src="components/icons/search.svg" @data-mode="packs" />
+                <mend:include src="components/icons/symbol_at.svg" @data-mode="users" @style="display: none;" />
+                <mend:include src="components/icons/hashtag.svg" @data-mode="bundles" @style="display: none;" />
+                <input type="text" placeholder="Search..." />
+                <footer class="w-menu list" style="min-width: 16rem;">
                     <div>
-                        Searches for <b>packs</b> by default
+                        Searches for <b>packs by default</b>
                     </div>
                     <div>
                         <em>@</em>
@@ -48,17 +52,17 @@
             </div>
 
             <mend:extend src="components/button/header.html" :label="Inbox" @style="grid-area: inbox;">
-                <mend:include src="components/icons/notification.svg" />
+                <mend:include src="components/icons/notification.svg" @class="a-hide-landscape a-show-portrait" />
             </mend:extend>
 
             <mend:if value="{{ ^.logged_in }}">
                 <div class="w-dropdown" style="grid-area: account;">
                     <button class="w-header-dropdown" style="grid-area: account;" onclick="openDropdown(this);">
                         <img src="/assets/images/bbfh.jpg" width="32" height="32" alt="logo" />
-                        <span class="adapt-hide-widescreen">BubbleFish</span>
-                        <mend:include src="components/icons/angle_down.svg" />
+                        <span class="a-hide-widescreen">BubbleFish</span>
+                        <mend:include src="components/icons/angle_down.svg" @class="indicator" />
                     </button>
-                    <footer class="w-dropdown-menu" data-prefer="right">
+                    <footer class="w-menu buttons" data-prefer="right">
                         <mend:extend src="components/dropdown/item.html" :label="My profile">
                             <mend:include src="components/icons/user.svg" />
                         </mend:extend>
@@ -71,8 +75,8 @@
                         <mend:extend src="components/dropdown/item.html" :label="Settings">
                             <mend:include src="components/icons/properties.svg" />
                         </mend:extend>
-                        <mend:extend src="components/dropdown/item.html" :label="Log out" @class="w-button disturbing"
-                            @href="/login.html">
+                        <mend:extend src="components/dropdown/item.html" :label="Log out"
+                            @class="w-button align-left disturbing" @href="/login.html">
                             <mend:include src="components/icons/angle_right.svg" />
                         </mend:extend>
                     </footer>
@@ -109,11 +113,11 @@
                     <a href="">Privacy Policy</a>
                     <a href="">Cookies</a>
                 </section>
-                <section class="footnote" style="grid-area: footnote;">
-                    <b>Copyright © 2025 Smithed</b>
-                    <span>Not an official Minecraft product. Not approved by or associated with Mojang Studios</span>
-                </section>
             </div>
+            <footer style="grid-area: footnote;">
+                <b>Copyright © 2025 Smithed</b>
+                <p>Not an official Minecraft product. Not approved by or associated with Mojang Studios</p>
+            </footer>
         </footer>
     </body>
 

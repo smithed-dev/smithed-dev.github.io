@@ -1,24 +1,52 @@
-@media only screen and (max-width: 72rem) {
-  .adapt-hide-widescreen {
+@media only screen and (max-width: (@screen-max + 4rem)) {
+  .a-hide-widescreen {
     display: none;
   }
 
-  .w-dropdown-menu[data-prefer="left"] {
-    left: 0;
+  .a-show-widescreen {
+    display: initial;
   }
 
-  .w-dropdown-menu[data-prefer="right"] {
-    right: 0;
+  .w-menu[data-prefer="right"] {
+    right: @spacing-h;
+
+    &::before {
+      left: auto;
+      right: @spacing-header;
+      transform: inherit;
+    }
   }
 }
 
-@media only screen and (max-width: 52rem) {
-  .adapt-hide-mobile {
+@media only screen and (max-width: (@screen-content + 4rem)) {
+  .a-hide-landscape {
     display: none;
   }
 
-  .adapt-show-mobile {
+  .a-show-landscape {
     display: initial;
+  }
+
+  .l-cards {
+    grid-template-columns: auto;
+  }
+
+  .l-login {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: (@screen-portrait + 4rem)) {
+  .a-hide-portrait {
+    display: none;
+  }
+
+  .a-show-portrait {
+    display: initial;
+  }
+
+  .l-cards {
+    grid-template-columns: auto;
   }
 
   body>header {
@@ -32,40 +60,23 @@
       "search search search search";
   }
 
-  body>footer {
-    &>div {
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
-      grid-template-areas:
-        "about"
-        "community"
-        "legal"
-        "footnote";
-    }
-  }
-
-  body>main {
-    align-items: center;
-  }
-
-  .layout-cards {
-    grid-template-columns: auto;
-
-    &>* {
-      max-width: var(--size-screen-min);
-      margin: 0 auto;
-    }
-  }
-
-  main section.login {
-    padding: 0;
-    max-width: 30rem;
+  body>footer>div {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "about"
+      "community"
+      "legal";
   }
 }
 
-@media only screen and (max-width: 27rem) {
-  .adapt-hide-min {
+@media only screen and (max-width: (@min-width + 4rem)) {
+  .a-hide-min {
     display: none;
+  }
+
+  .a-show-min {
+    display: initial;
   }
 
   body>header {
@@ -78,14 +89,8 @@
       "search search";
   }
 
-  .pack-card {
-    footer>.pack-card-meta {
-      display: grid;
-      grid-template-columns: auto auto;
-    }
-  }
-
-  main section.login section:last-child {
-    flex-direction: column;
+  .pack-card .metadata {
+    display: grid;
+    grid-template-columns: 1rem auto;
   }
 }

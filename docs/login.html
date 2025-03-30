@@ -9,7 +9,9 @@
     <title>
         Smithed™ (bbfh.me edition) 
     </title>
-    <link rel="stylesheet" href="/assets/styles.min.css?checksum=fad8865339d0582562810983b8d85b87" />
+    <!-- The checksum is automatically generated,
+        it's just used to make sure the browser's cache gets updated when the file changes -->
+    <link rel="stylesheet" href="/assets/styles.min.css?checksum=3316e332e11f5159c2b59e669d6a632a" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&family=Lexend:wght@100..900&family=Rubik:wght@700&display=swap" />
@@ -27,42 +29,47 @@
                     <path transform="matrix(1.3713 0 0 1.3713 -.74255 -.78291)" d="m0.95242 2.7722v0.29839l1.2719 0.40842 0.82325-0.26421v-0.29946l-0.82325 0.25922-1.2719-0.40237z" />
                 </g>
             </svg>
-            <h2 class="adapt-hide-widescreen adapt-show-mobile adapt-hide-min">
+            <h2 class="a-hide-widescreen a-show-portrait a-hide-min">
                 Smithed 
             </h2>
         </a>
-        <a class="w-header-button" href="/" style="grid-area: browse;">
+        <a class="w-header-link" href="/" style="grid-area: browse;">
             <span>
                 Browse 
             </span>
 
         </a>
-        <a class="w-header-button" href="/" style="grid-area: articles;">
+        <a class="w-header-link" href="/" style="grid-area: articles;">
             <span>
                 Articles 
             </span>
 
         </a>
-        <a class="w-header-button" href="/" style="grid-area: weld;">
+        <a class="w-header-link" href="/" style="grid-area: weld;">
             <span>
                 Weld 
             </span>
-            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
+            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor" class="a-hide-landscape a-show-portrait">
                 <path d="m6 2c-2.216 0-4 1.784-4 4v4c0 2.216 1.784 4 4 4h4c2.216 0 4-1.784 4-4h-2c0 1.108-0.892 2-2 2h-4c-1.108 0-2-0.892-2-2v-4c0-1.108 0.892-2 2-2v-2zm2 0v2h2c0.17886 0 0.35087 0.02667 0.51562 0.070312l-3.2227 3.2227a1 1 0 0 0 0 1.4141 1 1 0 0 0 1.4141 0l3.2227-3.2227c0.043642 0.16476 0.070312 0.33677 0.070312 0.51562v2h2v-2c0-2.216-1.784-4-4-4h-2z" />
             </svg>
         </a>
-        <div class="w-input" style="grid-area: search;">
-            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
+        <div class="w-input flex" style="grid-area: search;">
+            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor" data-mode="packs">
                 <path d="m10 7a3 3 0 0 1-3 3 3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3zm-3-5a5 5 0 0 0-5 5 5 5 0 0 0 5 5 5 5 0 0 0 2.7539-0.83203l2.5391 2.5391c0.39052 0.39052 1.0235 0.39052 1.4141 0 0.39052-0.39052 0.39052-1.0235 0-1.4141l-2.5391-2.5391a5 5 0 0 0 0.83203-2.7539 5 5 0 0 0-5-5z" fill-rule="evenodd" />
             </svg>
-            <input class="with-helper" type="text" placeholder="Search..." />
-            <footer>
+            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor" data-mode="users" style="display: none;">
+                <path d="m8 0a8 8 0 00-8 8 8 8 0 008 8 1 1 0 001-1 1 1 0 00-1-1 6 6 0 01-6-6 6 6 0 016-6 6 6 0 016 6v1a1 1 0 01-1 1 1 1 0 01-1-1v-1a4 4 0 00-4-4 4 4 0 00-4 4 4 4 0 004 4 4 4 0 002.710938-1.068359 3 3 0 002.289062 1.068359 3 3 0 003-3v-1a8 8 0 00-8-8zm0 6a2 2 0 012 2 2 2 0 01-2 2 2 2 0 01-2-2 2 2 0 012-2z" fill-rule="evenodd" />
+            </svg>
+            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor" data-mode="bundles" style="display: none;">
+                <path d="m5-1.6e-8 -0.49998 4h-2.5c-0.554 0-1 0.446-1 1 3e-6 0.554 0.446 1 1 1h2.25l-0.49998 4h-1.75c-0.554 0-1 0.44601-1 1 3e-6 0.554 0.446 1 1 1h1.5l-0.49998 4h2l0.49998-4h4l-0.49998 4h2l0.49998-4h2.5c0.554 0 1-0.446 1-1-3e-6 -0.554-0.446-1-1-1h-2.25l0.49998-4h1.75c0.554 0 1-0.446 1-1-3e-6 -0.554-0.446-1-1-1h-1.5l0.49998-4h-2l-0.49998 4h-4l0.49998-4zm1.25 6h4l-0.49998 4h-4z" />
+            </svg>
+            <input type="text" placeholder="Search..." />
+            <footer class="w-menu list" style="min-width: 16rem;">
                 <div>
                     Searches for 
                     <b>
-                        packs 
+                        packs by default 
                     </b>
-                    by default 
                 </div>
                 <div>
                     <em>
@@ -88,26 +95,26 @@
                 </div>
             </footer>
         </div>
-        <a class="w-header-button" href="/" style="grid-area: inbox;">
+        <a class="w-header-link" href="/" style="grid-area: inbox;">
             <span>
                 Inbox 
             </span>
-            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
+            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor" class="a-hide-landscape a-show-portrait">
                 <path d="m7 0.0019531v2.0996c-2.2746 0.46688-4 2.4912-4 4.8984v1 1.5293l-0.93164 1.0039a0.87297 0.87297 0 0 0 0.64062 1.4668h10.705a0.82843 0.82843 0 0 0 0.58594-1.4141l-1-1v-1.5859-1c0-2.4072-1.7254-4.4316-4-4.8984v-2.0996h-2zm1 3.998c1.6687 0 3 1.3313 3 3v1 2h-6v-2-1c0-1.6687 1.3313-3 3-3zm-2 10a2 2 0 0 0 1 1.7324 2 2 0 0 0 2 0 2 2 0 0 0 1-1.7324h-4z" />
             </svg>
         </a>
-        <button class="w-button accent" style="grid-area: account;">
+        <button class="w-button align-center accent" style="grid-area: account;">
             <span>
                 Login 
             </span>
-            <hr class="vertical adapt-hide-min" />
+            <hr />
             <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
                 <path d="m14 15c0 0.55228-0.44772 1-1 1s-1-0.44772-1-1v-3c0-0.554-0.446-1-1-1h-6c-0.554 0-1 0.446-1 1v3c0 0.55228-0.44772 1-1 1s-1-0.44772-1-1v-3c0-1.662 1.338-3 3-3h6c1.662 0 3 1.338 3 3zm-4-11a2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2 2 2 0 0 1 2 2zm2 0a4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4 4 4 0 0 1 4 4z" fill-rule="evenodd" />
             </svg>
         </button>
     </header>
     <main>
-        <section class="content">
+        <section class="l-heading">
             <h1>
                 Welcome back! 
             </h1>
@@ -115,8 +122,8 @@
                 Login into your Smithed account 
             </p>
         </section>
-        <section class="login">
-            <svg width="128" height="128" style="min-width: 128px; min-height: 128px;" version="1.1" viewbox="0 0 4 4" xmlns="http://www.w3.org/2000/svg" class="adapt-hide-mobile">
+        <section class="l-login">
+            <svg width="128" height="128" style="min-width: 128px; min-height: 128px;" version="1.1" viewbox="0 0 4 4" xmlns="http://www.w3.org/2000/svg" class="a-hide-portrait">
                 <g fill="currentColor">
                     <path transform="matrix(1.3713 0 0 1.3713 -.74255 -.78291)" d="m0.7368 0.88846 0.88662-0.28492a0.49739 0.49739 180 0 1 0.30432-9.22e-6l1.3355 0.42907-1.0396 0.33429z" />
                     <path transform="matrix(1.3713 0 0 1.3713 -.74255 -.78291)" d="m0.5415 1.0766v0.48676a0.24264 0.24264 0 0 0 0.16842 0.23109l1.5137 0.48676 7.121e-4 -3.561e-4 1.0657-0.34184a0.24251 0.24251 0 0 0 0.16842-0.23109v-0.48676l-1.2338 0.39133h-3.561e-4l-1.6828-0.5359z" />
@@ -130,7 +137,7 @@
                         <h4>
                             EMAIL 
                         </h4>
-                        <button class="w-button" onclick="showHelp(this)" data-help="Provide a valid email address">
+                        <button class="w-button small" onclick="showHelp(this)" data-help="Provide a valid email address">
                             <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
                                 <path d="m8 2c-2.2091 0-4 1.7909-4 4 0 0.55228 0.44772 1 1 1s1-0.44772 1-1c0-1.1046 0.89543-2 2-2 1.1046 0 2 0.89543 2 2s-0.89543 2-2 2c-0.55228 0-1 0.44772-1 1v1c0 0.55228 0.44772 1 1 1s1-0.44772 1-1v-0.13477c1.7633-0.45527 2.9965-2.0441 3-3.8652 0-2.2091-1.7909-4-4-4zm0 9.75a1.25 1.25 0 0 0-1.25 1.25 1.25 1.25 0 0 0 1.25 1.25 1.25 1.25 0 0 0 1.25-1.25 1.25 1.25 0 0 0-1.25-1.25z" />
                             </svg>
@@ -148,7 +155,7 @@
                         <h4>
                             PASSWORD 
                         </h4>
-                        <button class="w-button" onclick="showHelp(this)" data-help="The password you used to create your account">
+                        <button class="w-button small" onclick="showHelp(this)" data-help="The password you used to create your account">
                             <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
                                 <path d="m8 2c-2.2091 0-4 1.7909-4 4 0 0.55228 0.44772 1 1 1s1-0.44772 1-1c0-1.1046 0.89543-2 2-2 1.1046 0 2 0.89543 2 2s-0.89543 2-2 2c-0.55228 0-1 0.44772-1 1v1c0 0.55228 0.44772 1 1 1s1-0.44772 1-1v-0.13477c1.7633-0.45527 2.9965-2.0441 3-3.8652 0-2.2091-1.7909-4-4-4zm0 9.75a1.25 1.25 0 0 0-1.25 1.25 1.25 1.25 0 0 0 1.25 1.25 1.25 1.25 0 0 0 1.25-1.25 1.25 1.25 0 0 0-1.25-1.25z" />
                             </svg>
@@ -162,24 +169,24 @@
                     </div>
                 </div>
                 <section>
-                    <span class="gap">
+                    <span class="fill">
                     </span>
                     <input id="stay-logged-in" type="checkbox" />
                     <label for="stay-logged-in">
                         Stay logged in? 
                     </label>
-                    <button class="w-button accent">
+                    <button class="w-button align-center accent">
                         <span>
                             Login 
                         </span>
-                        <hr class="vertical adapt-hide-min" />
+                        <hr />
                         <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
                             <path d="m5.292 12.292c-0.39174 0.39173-0.39174 1.0243 0 1.416 0.39174 0.39174 1.0243 0.39174 1.416 0l5.7051-5.707-5.7051-5.707c-0.39174-0.39174-1.0243-0.39174-1.416 0-0.39174 0.39173-0.39174 1.0243 0 1.416l4.293 4.291z" />
                         </svg>
                     </button>
                 </section>
                 <hr />
-                <button class="w-button centered">
+                <button class="w-button align-center regular">
                     <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_489_358)">
                             <mask id="mask0_489_358" width="16" height="16" style="mask-type:luminance" maskunits="userSpaceOnUse" x="0" y="0">
@@ -195,7 +202,7 @@
                             </clippath>
                         </defs>
                     </svg>
-                    <hr class="vertical adapt-hide-min" />
+                    <hr />
                     <span>
                         GitHub login 
                     </span>
@@ -204,12 +211,12 @@
                     <a class="not-important" href>
                         Need help? 
                     </a>
-                    <span class="bullet adapt-hide-min">
+                    <span class="w-bullet a-hide-min">
                     </span>
                     <a class="not-important" href>
                         Privacy Policy 
                     </a>
-                    <span class="bullet adapt-hide-min">
+                    <span class="w-bullet a-hide-min">
                     </span>
                     <a href="/register.html">
                         Create an account 
@@ -262,15 +269,15 @@
                     Cookies 
                 </a>
             </section>
-            <section class="footnote" style="grid-area: footnote;">
-                <b>
-                    Copyright © 2025 Smithed 
-                </b>
-                <span>
-                    Not an official Minecraft product. Not approved by or associated with Mojang Studios 
-                </span>
-            </section>
         </div>
+        <footer style="grid-area: footnote;">
+            <b>
+                Copyright © 2025 Smithed 
+            </b>
+            <p>
+                Not an official Minecraft product. Not approved by or associated with Mojang Studios 
+            </p>
+        </footer>
     </footer>
 </body>
 

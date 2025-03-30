@@ -1,13 +1,13 @@
 <mend:extend src="root.html">
-    <section class="content">
+    <section class="l-heading">
         <h1>Welcome!</h1>
         <p class="centered">
-            Smithed is an open-source platform for exploring, sharing <br class="adapt-hide-mobile" />
+            Smithed is an open-source platform for exploring, sharing <br class="a-hide-portrait" />
             and supercharging minecraft data & resource packs.
         </p>
     </section>
 
-    <section class="layout-cards">
+    <section class="l-cards">
         <mend:extend src="components/pack_card.html">
             <mend:include src="components/pack_trending_label.html" />
         </mend:extend>
@@ -16,68 +16,72 @@
         </mend:extend>
     </section>
 
-    <section class="separator">
+    <section class="l-separator">
         <hr />
         What is Smithed exactly?
         <hr />
     </section>
 
-    <section class="layout-cards">
-        <article class="landing-card">
+    <section class="l-cards">
+        <a class="landing-card" href="">
             <header>
                 <mend:include src="components/icons/home.svg" @style="min-width: 2rem; min-height: 2rem;"
-                    @class="adapt-hide-min" />
-                <h1>Discord</h1>
-                <mend:extend src="components/button/accent.html" :label="Join">
+                    @class="a-hide-min" />
+                <h1 class="flex">Discord</h1>
+                <span>
+                    Join
                     <mend:include src="components/icons/popout.svg" />
-                </mend:extend>
+                </span>
             </header>
             <p>
                 Smithed is a community of people passionate about data & resource packs. We host various related events,
                 develop libraries and hang out!
             </p>
-        </article>
-        <article class="landing-card">
+        </a>
+        <a class="landing-card" href="">
             <header>
                 <mend:include src="components/icons/jigsaw.svg" @style="min-width: 2rem; min-height: 2rem;"
-                    @class="adapt-hide-min" />
-                <h1>Packs</h1>
-                <mend:extend src="components/button/accent.html" :label="Browse">
+                    @class="a-hide-min" />
+                <h1 class="flex">Packs</h1>
+                <span>
+                    Browse
                     <mend:include src="components/icons/search.svg" />
-                </mend:extend>
+                </span>
             </header>
             <p>
                 Create, share and browse data & resource packs. There are many tools to make the process simple and
                 fast.
             </p>
-        </article>
-        <article class="landing-card">
+        </a>
+        <a class="landing-card" href="">
             <header>
                 <mend:include src="components/icons/scroll.svg" @style="min-width: 2rem; min-height: 2rem;"
-                    @class="adapt-hide-min" />
-                <h1>Docs</h1>
-                <mend:extend src="components/button/accent.html" :label="Explore">
+                    @class="a-hide-min" />
+                <h1 class="flex">Docs</h1>
+                <span>
+                    Explore
                     <mend:include src="components/icons/search.svg" />
-                </mend:extend>
+                </span>
             </header>
             <p>
                 Your all-in-one guide to the Smithed ecosystem. Whether you're a seasoned pack developer or just
                 starting out, Smithed has something to offer.
             </p>
-        </article>
-        <article class="landing-card">
+        </a>
+        <a class="landing-card" href="">
             <header>
                 <mend:include src="components/icons/curly_braces.svg" @style="min-width: 2rem; min-height: 2rem;"
-                    @class="adapt-hide-min" />
-                <h1>Weld</h1>
-                <mend:extend src="components/button/accent.html" :label="Try it">
+                    @class="a-hide-min" />
+                <h1 class="flex">Weld</h1>
+                <span>
+                    Try it
                     <mend:include src="components/icons/popout.svg" />
-                </mend:extend>
+                </span>
             </header>
             <p>
                 The fastest pack merger in the west. Merge all your data and resource packs into a single zip easily
                 droppable into any world or minecraft instance.
             </p>
-        </article>
+        </a>
     </section>
 </mend:extend>
