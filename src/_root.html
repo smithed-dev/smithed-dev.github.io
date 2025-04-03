@@ -63,7 +63,7 @@
                         <mend:include src="components/icons/angle_down.svg" @class="indicator" />
                     </button>
                     <footer class="w-menu buttons" data-prefer="right">
-                        <mend:extend src="components/dropdown/item.html" :label="My profile">
+                        <mend:extend src="components/dropdown/item.html" :label="My profile" @href="/profile.html">
                             <mend:include src="components/icons/user.svg" />
                         </mend:extend>
                         <mend:extend src="components/dropdown/item.html" :label="New pack">
@@ -72,7 +72,7 @@
                         <mend:extend src="components/dropdown/item.html" :label="New bundle">
                             <mend:include src="components/icons/new_folder.svg" />
                         </mend:extend>
-                        <mend:extend src="components/dropdown/item.html" :label="Settings">
+                        <mend:extend src="components/dropdown/item.html" :label="Settings" @href="/settings.html">
                             <mend:include src="components/icons/properties.svg" />
                         </mend:extend>
                         <mend:extend src="components/dropdown/item.html" :label="Log out"
@@ -89,7 +89,7 @@
             </mend:unless>
         </header>
 
-        <main>
+        <main class="{{ ^.main }}">
             <mend:slot />
         </main>
 

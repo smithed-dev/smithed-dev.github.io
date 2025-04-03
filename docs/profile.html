@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta name="viewport" content="user-scalable=yes, initial-scale=1.0, width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>
+        Smithed™ (bbfh.me edition) 
+    </title>
+    <!-- The checksum is automatically generated,
+        it's just used to make sure the browser's cache gets updated when the file changes -->
+    <link rel="stylesheet" href="/assets/styles.min.css?checksum=6657276dafbc674e13a6998817a80b4e" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&family=Lexend:wght@100..900&family=Rubik:wght@700&display=swap" />
+    <script src="/assets/script.js" defer>
+    </script>
+</head>
+<body>
+    <header>
+        <a class="w-logotype" href="/" style="grid-area: logotype;">
+            <svg width="32" height="32" style="min-width: 32px; min-height: 32px;" version="1.1" viewbox="0 0 4 4" xmlns="http://www.w3.org/2000/svg">
+                <g fill="currentColor">
+                    <path transform="matrix(1.3713 0 0 1.3713 -.74255 -.78291)" d="m0.7368 0.88846 0.88662-0.28492a0.49739 0.49739 180 0 1 0.30432-9.22e-6l1.3355 0.42907-1.0396 0.33429z" />
+                    <path transform="matrix(1.3713 0 0 1.3713 -.74255 -.78291)" d="m0.5415 1.0766v0.48676a0.24264 0.24264 0 0 0 0.16842 0.23109l1.5137 0.48676 7.121e-4 -3.561e-4 1.0657-0.34184a0.24251 0.24251 0 0 0 0.16842-0.23109v-0.48676l-1.2338 0.39133h-3.561e-4l-1.6828-0.5359z" />
+                    <path d="m1.1792 2.3262v0.51953l1.1284 0.36279 0.56445-0.18115v-0.51953l-0.56445 0.17432-1.1284-0.35596z" opacity=".5" />
+                    <path transform="matrix(1.3713 0 0 1.3713 -.74255 -.78291)" d="m0.95242 2.7722v0.29839l1.2719 0.40842 0.82325-0.26421v-0.29946l-0.82325 0.25922-1.2719-0.40237z" />
+                </g>
+            </svg>
+            <h2 class="a-hide-widescreen a-show-portrait a-hide-min">
+                Smithed 
+            </h2>
+        </a>
+        <a class="w-header-link" href="/" style="grid-area: browse;">
+            <span>
+                Browse 
+            </span>
+
+        </a>
+        <a class="w-header-link" href="/" style="grid-area: articles;">
+            <span>
+                Articles 
+            </span>
+
+        </a>
+        <a class="w-header-link" href="/" style="grid-area: weld;">
+            <span>
+                Weld 
+            </span>
+            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor" class="a-hide-landscape a-show-portrait">
+                <path d="m6 2c-2.216 0-4 1.784-4 4v4c0 2.216 1.784 4 4 4h4c2.216 0 4-1.784 4-4h-2c0 1.108-0.892 2-2 2h-4c-1.108 0-2-0.892-2-2v-4c0-1.108 0.892-2 2-2v-2zm2 0v2h2c0.17886 0 0.35087 0.02667 0.51562 0.070312l-3.2227 3.2227a1 1 0 0 0 0 1.4141 1 1 0 0 0 1.4141 0l3.2227-3.2227c0.043642 0.16476 0.070312 0.33677 0.070312 0.51562v2h2v-2c0-2.216-1.784-4-4-4h-2z" />
+            </svg>
+        </a>
+        <div class="w-input flex" style="grid-area: search;">
+            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor" data-mode="packs">
+                <path d="m10 7a3 3 0 0 1-3 3 3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3zm-3-5a5 5 0 0 0-5 5 5 5 0 0 0 5 5 5 5 0 0 0 2.7539-0.83203l2.5391 2.5391c0.39052 0.39052 1.0235 0.39052 1.4141 0 0.39052-0.39052 0.39052-1.0235 0-1.4141l-2.5391-2.5391a5 5 0 0 0 0.83203-2.7539 5 5 0 0 0-5-5z" fill-rule="evenodd" />
+            </svg>
+            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor" data-mode="users" style="display: none;">
+                <path d="m8 0a8 8 0 00-8 8 8 8 0 008 8 1 1 0 001-1 1 1 0 00-1-1 6 6 0 01-6-6 6 6 0 016-6 6 6 0 016 6v1a1 1 0 01-1 1 1 1 0 01-1-1v-1a4 4 0 00-4-4 4 4 0 00-4 4 4 4 0 004 4 4 4 0 002.710938-1.068359 3 3 0 002.289062 1.068359 3 3 0 003-3v-1a8 8 0 00-8-8zm0 6a2 2 0 012 2 2 2 0 01-2 2 2 2 0 01-2-2 2 2 0 012-2z" fill-rule="evenodd" />
+            </svg>
+            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor" data-mode="bundles" style="display: none;">
+                <path d="m5-1.6e-8 -0.49998 4h-2.5c-0.554 0-1 0.446-1 1 3e-6 0.554 0.446 1 1 1h2.25l-0.49998 4h-1.75c-0.554 0-1 0.44601-1 1 3e-6 0.554 0.446 1 1 1h1.5l-0.49998 4h2l0.49998-4h4l-0.49998 4h2l0.49998-4h2.5c0.554 0 1-0.446 1-1-3e-6 -0.554-0.446-1-1-1h-2.25l0.49998-4h1.75c0.554 0 1-0.446 1-1-3e-6 -0.554-0.446-1-1-1h-1.5l0.49998-4h-2l-0.49998 4h-4l0.49998-4zm1.25 6h4l-0.49998 4h-4z" />
+            </svg>
+            <input type="text" placeholder="Search..." />
+            <footer class="w-menu list" style="min-width: 16rem;">
+                <div>
+                    Searches for 
+                    <b>
+                        packs by default 
+                    </b>
+                </div>
+                <div>
+                    <em>
+                        @ 
+                    </em>
+                    To search for 
+                    <b>
+                        users 
+                    </b>
+                    and 
+                    <b>
+                        teams 
+                    </b>
+                </div>
+                <div>
+                    <em>
+                        # 
+                    </em>
+                    To search for 
+                    <b>
+                        bundles 
+                    </b>
+                </div>
+            </footer>
+        </div>
+        <a class="w-header-link" href="/" style="grid-area: inbox;">
+            <span>
+                Inbox 
+            </span>
+            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor" class="a-hide-landscape a-show-portrait">
+                <path d="m7 0.0019531v2.0996c-2.2746 0.46688-4 2.4912-4 4.8984v1 1.5293l-0.93164 1.0039a0.87297 0.87297 0 0 0 0.64062 1.4668h10.705a0.82843 0.82843 0 0 0 0.58594-1.4141l-1-1v-1.5859-1c0-2.4072-1.7254-4.4316-4-4.8984v-2.0996h-2zm1 3.998c1.6687 0 3 1.3313 3 3v1 2h-6v-2-1c0-1.6687 1.3313-3 3-3zm-2 10a2 2 0 0 0 1 1.7324 2 2 0 0 0 2 0 2 2 0 0 0 1-1.7324h-4z" />
+            </svg>
+        </a>
+        <div class="w-dropdown" style="grid-area: account;">
+            <button class="w-header-dropdown" style="grid-area: account;" onclick="openDropdown(this);">
+                <img src="/assets/images/bbfh.jpg" width="32" height="32" alt="logo" />
+                <span class="a-hide-widescreen">
+                    BubbleFish 
+                </span>
+                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor" class="indicator">
+                    <path d="m3.7082 5.292c-0.39173-0.39174-1.0243-0.39174-1.416 0-0.39174 0.39174-0.39174 1.0243 0 1.416l5.707 5.7051 5.707-5.7051c0.39174-0.39174 0.39174-1.0243 0-1.416-0.39173-0.39174-1.0243-0.39174-1.416 0l-4.291 4.293z" />
+                </svg>
+            </button>
+            <footer class="w-menu buttons" data-prefer="right">
+                <a class="w-button align-left" href="/profile.html">
+                    <span>
+                        My profile 
+                    </span>
+                    <hr class="vertical" />
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
+                        <path d="m14 15c0 0.55228-0.44772 1-1 1s-1-0.44772-1-1v-3c0-0.554-0.446-1-1-1h-6c-0.554 0-1 0.446-1 1v3c0 0.55228-0.44772 1-1 1s-1-0.44772-1-1v-3c0-1.662 1.338-3 3-3h6c1.662 0 3 1.338 3 3zm-4-11a2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2 2 2 0 0 1 2 2zm2 0a4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4 4 4 0 0 1 4 4z" fill-rule="evenodd" />
+                    </svg>
+                </a>
+                <a class="w-button align-left" href>
+                    <span>
+                        New pack 
+                    </span>
+                    <hr class="vertical" />
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
+                        <path d="m5 0c-1.662 0-3 1.338-3 3v10c0 1.662 1.338 3 3 3h4.992v-0.02148h-2.006v-1.979h-2.986c-0.554 0-1-0.446-1-1v-10c0-0.554 0.446-1 1-1h3v4h4v1.971h2v-2.799l-5.172-5.172h-3.828zm6.992 9.971v1 1.008h-1.006-1v2h1 1.006v1.008 1h2v-1-1.008h1.008 1v-2h-1-1.008v-1.008-1h-2z" />
+                    </svg>
+                </a>
+                <a class="w-button align-left" href>
+                    <span>
+                        New bundle 
+                    </span>
+                    <hr class="vertical" />
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
+                        <path d="m3 0c-1.627 0-3 1.373-3 3v8c0 1.627 1.373 3 3 3h5v-2h-5c-0.554 0-1-0.446-1-1v-6c0-0.554 0.446-1 1-1h10c0.554 0 1 0.446 1 1v3h2v-3c0-1.627-1.373-3-3-3h-4l-2-2h-4zm9 10v2h-2v2h2v2h2v-2h2v-2h-2v-2h-2z" />
+                    </svg>
+                </a>
+                <a class="w-button align-left" href="/settings.html">
+                    <span>
+                        Settings 
+                    </span>
+                    <hr class="vertical" />
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
+                        <path d="m4.5 8c-1.9211482 0-3.5 1.5788518-3.5 3.5 0 1.921148 1.5788518 3.5 3.5 3.5 1.5742853 0 2.9174078-1.060034 3.3515625-2.5h6.1484375a1 1 0 0 0 1-1 1 1 0 0 0-1-1h-6.1484375c-0.4341547-1.4399663-1.7772772-2.5-3.3515625-2.5zm0 2c0.8402701 0 1.5 0.65973 1.5 1.5s-0.6597299 1.5-1.5 1.5-1.5-0.65973-1.5-1.5 0.6597299-1.5 1.5-1.5z" fill-rule="evenodd" />
+                        <path d="m11.5 1c-1.5742853 0-2.9174078 1.0600337-3.3515625 2.5h-6.1484375a1 1 0 0 0-1 1 1 1 0 0 0 1 1h6.1484375c0.4341547 1.4399663 1.7772772 2.5 3.3515625 2.5 1.921148 0 3.5-1.5788518 3.5-3.5s-1.578852-3.5-3.5-3.5zm0 2c0.84027 0 1.5 0.6597299 1.5 1.5s-0.65973 1.5-1.5 1.5-1.5-0.6597299-1.5-1.5 0.65973-1.5 1.5-1.5z" fill-rule="evenodd" />
+                    </svg>
+                </a>
+                <a class="w-button align-left disturbing" href="/login.html">
+                    <span>
+                        Log out 
+                    </span>
+                    <hr class="vertical" />
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
+                        <path d="m5.292 12.292c-0.39174 0.39173-0.39174 1.0243 0 1.416 0.39174 0.39174 1.0243 0.39174 1.416 0l5.7051-5.707-5.7051-5.707c-0.39174-0.39174-1.0243-0.39174-1.416 0-0.39174 0.39173-0.39174 1.0243 0 1.416l4.293 4.291z" />
+                    </svg>
+                </a>
+            </footer>
+        </div>
+    </header>
+    <main class="wide">
+        <img class="banner" src="/assets/images/banner.jpg" />
+        <div class="l-row">
+            <img class="logo" src="/assets/images/bbfh.jpg" width="64" height="64" />
+            <div class="l-legend">
+                <h1>
+                    BubbleFish 
+                </h1>
+                <span>
+                    Joined 3 years ago 
+                </span>
+            </div>
+        </div>
+        <div class="l-with-sidebar">
+            <aside class="buttons flex">
+                <button class="w-button align-left toggled">
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
+                        <path d="m8 1.9365e-7a1.7921 1.7921 0 0 0-0.89522 0.24048l-5.3774 3.104a1.7921 1.7921 0 0 0-0.89522 1.552l2e-8 6.208a1.7921 1.7921 0 0 0 0.89522 1.552l5.3774 3.104a1.7921 1.7921 0 0 0 1.7904 0l5.3774-3.104a1.7921 1.7921 0 0 0 0.89522-1.552v-6.208a1.7921 1.7921 0 0 0-0.89522-1.552l-5.3774-3.104a1.7921 1.7921 0 0 0-0.89522-0.24048zm0 1.7925 4.3407 2.5058-4.3407 2.5058-4.3407-2.5058zm-5.3754 4.3003 4.3407 2.5058v5.0116l-4.3407-2.5058zm10.751 0v5.0116l-4.3407 2.5058 1e-7 -5.0116z" />
+                    </svg>
+                    <hr class="vertical a-hide-landscape" />
+                    <span class="a-hide-landscape">
+                        Packs 
+                    </span>
+                </button>
+                <a class="w-button align-left regular">
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
+                        <path d="m3 5h10c0.554 0 1 0.446 1 1v6c0 0.554-0.446 1-1 1h-10c-0.554 0-1-0.446-1-1v-6c0-0.554 0.446-1 1-1zm0-4c-1.6274 0-3 1.3726-3 3v8c0 1.6274 1.3726 3 3 3h10c1.6274 0 3-1.3726 3-3v-6c0-1.6274-1.3726-3-3-3h-4l-2-2z" fill-rule="evenodd" />
+                    </svg>
+                    <hr class="vertical a-hide-landscape" />
+                    <span class="a-hide-landscape">
+                        Bundles 
+                    </span>
+                </a>
+                <a class="w-button align-left regular" href="/profile_about.html">
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
+                        <path d="m8 0a8 8 0 00-8 8 8 8 0 008 8 1 1 0 001-1 1 1 0 00-1-1 6 6 0 01-6-6 6 6 0 016-6 6 6 0 016 6v1a1 1 0 01-1 1 1 1 0 01-1-1v-1a4 4 0 00-4-4 4 4 0 00-4 4 4 4 0 004 4 4 4 0 002.710938-1.068359 3 3 0 002.289062 1.068359 3 3 0 003-3v-1a8 8 0 00-8-8zm0 6a2 2 0 012 2 2 2 0 01-2 2 2 2 0 01-2-2 2 2 0 012-2z" fill-rule="evenodd" />
+                    </svg>
+                    <hr class="vertical a-hide-landscape" />
+                    <span class="a-hide-landscape">
+                        About 
+                    </span>
+                </a>
+                <a class="w-button align-left regular" href="/profile_analytics.html">
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
+                        <path d="m1 0c-0.55228 0-1 0.44772-1 1v14c0 0.55228 0.44772 1 1 1h14c0.55228 0 1-0.44772 1-1s-0.44772-1-1-1h-13v-13c0-0.55228-0.44772-1-1-1zm8 2c-0.55228 0-1 0.44772-1 1v9h2v-9c0-0.55228-0.44772-1-1-1zm4 2c-0.55228 0-1 0.44772-1 1v7h2v-7c0-0.55228-0.44772-1-1-1zm-8 4c-0.55228 0-1 0.44772-1 1v3h2v-3c0-0.55228-0.44772-1-1-1z" />
+                    </svg>
+                    <hr class="vertical a-hide-landscape" />
+                    <span class="a-hide-landscape">
+                        Analytics 
+                    </span>
+                </a>
+            </aside>
+            <section class="l-cards">
+                <a class="pack-card" href="/pack.html">
+                    <header>
+
+                    </header>
+                    <img src="/assets/images/pack_1_thumb.jpg" width="384" height="216" alt="thumbnail" />
+                    <footer>
+                        <section>
+                            <span>
+                                1.18 — 1.21.1 
+                            </span>
+                            <span class="w-bullet">
+                            </span>
+                            <span>
+                                Technology 
+                            </span>
+                        </section>
+                        <div>
+                            <h3>
+                                My cool datapack 
+                            </h3>
+                            <p>
+                                Updates the vanilla dungeons with new builds and added locate commands 
+                            </p>
+                        </div>
+                        <section class="metadata">
+                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor" class="rating-positive">
+                                <path d="m4.3965 1.4492c-1.2748-2.912e-4 -2.4877 0.55489-3.3223 1.5176-0.69193 0.79889-1.0745 1.8206-1.0742 2.8789v0.0039c0.0039 1.1638 0.4696 2.28 1.2949 3.1016l4.7969 4.8086c1.0456 1.0456 2.7709 1.0456 3.8164 0l4.7969-4.8086 2e-3 -0.00195c0.82412-0.82142 1.289-1.9367 1.2929-3.0996v-0.0039c2.97e-4 -1.0583-0.3823-2.08-1.0742-2.8789-0.83461-0.96262-2.0475-1.5178-3.3223-1.5176-1.1654-1.245e-4 -2.2847 0.46265-3.1094 1.2871l-0.49414 0.49414-0.49414-0.49414c-0.82468-0.82442-1.944-1.2872-3.1094-1.2871zm0 2c0.63643-7.07e-5 1.2457 0.25169 1.6953 0.70117l1.9082 1.9082 1.9082-1.9082c0.44954-0.44944 1.0588-0.70124 1.6953-0.70117 0.6958-1.413e-4 1.3543 0.29994 1.8105 0.82617 0.37781 0.43622 0.58564 0.99276 0.58594 1.5684-0.0026 0.63489-0.25556 1.242-0.70508 1.6895l-2e-3 0.00195-4.8008 4.8105c-0.28089 0.27924-0.70592 0.28041-0.98633 0l-4.7988-4.8105-0.0019532-0.0019531c-0.44957-0.44755-0.70246-1.0545-0.70508-1.6895 2.918e-4 -0.57562 0.20814-1.1322 0.58594-1.5684 0.4562-0.52621 1.1148-0.82633 1.8105-0.82617z" />
+                            </svg>
+                            <span class="rating-positive">
+                                Mostly positive (51) 
+                            </span>
+                            <span class="w-bullet a-hide-min">
+                            </span>
+                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
+                                <path d="m8 11-4.668-4.1836c-0.41096-0.36892-0.44506-1.0011-0.076172-1.4121 0.36836-0.41154 1.0006-0.44652 1.4121-0.078125l2.332 2.0918v-5.418c0-0.554 0.446-1 1-1s1 0.446 1 1v5.418l2.332-2.0918c0.41151-0.36839 1.0438-0.33341 1.4121 0.078125 0.36889 0.41098 0.33479 1.0432-0.07617 1.4121zm-6 2c-0.554 0-1 0.446-1 1s0.446 1 1 1h12c0.554 0 1-0.446 1-1s-0.446-1-1-1z" />
+                            </svg>
+                            <span>
+                                1.6K 
+                            </span>
+                            <span class="w-bullet a-hide-min">
+                            </span>
+                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
+                                <path d="m11.889 4.1109c-2.1479-2.1479-5.6303-2.1479-7.7782 0s-2.1479 5.6303 0 7.7782c2.1479 2.1479 5.6303 2.1479 7.7782 0 0.39052-0.39052 0.39052-1.0237 0-1.4142s-1.0237-0.39052-1.4142 0c-1.3668 1.3668-3.5829 1.3668-4.9497 0-1.3668-1.3668-1.3668-3.5829 0-4.9497s3.5829-1.3668 4.9497 0l-1.7678 1.7678h3.9498c0.55228 0 1-0.44773 0.99999-0.99999v-3.9498z" />
+                            </svg>
+                            <span>
+                                1 month ago 
+                            </span>
+                        </section>
+                    </footer>
+                </a>
+                <a class="pack-card" href="/pack.html">
+                    <header>
+                        <div class="label-new">
+                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
+                                <path d="m8 4c-0.554 0-1 0.446-1 1v4h4c0.554 0 1-0.446 1-1s-0.446-1-1-1h-2v-2c0-0.554-0.446-1-1-1zm8 4a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8 8 8 0 0 1 8 8zm-2 0a6 6 0 0 1-6 6 6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6z" fill-rule="evenodd" />
+                            </svg>
+                            <span>
+                                NEW 
+                            </span>
+                        </div>
+                    </header>
+                    <img src="/assets/images/pack_1_thumb.jpg" width="384" height="216" alt="thumbnail" />
+                    <footer>
+                        <section>
+                            <span>
+                                1.18 — 1.21.1 
+                            </span>
+                            <span class="w-bullet">
+                            </span>
+                            <span>
+                                Technology 
+                            </span>
+                        </section>
+                        <div>
+                            <h3>
+                                My cool datapack 
+                            </h3>
+                            <p>
+                                Updates the vanilla dungeons with new builds and added locate commands 
+                            </p>
+                        </div>
+                        <section class="metadata">
+                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor" class="rating-positive">
+                                <path d="m4.3965 1.4492c-1.2748-2.912e-4 -2.4877 0.55489-3.3223 1.5176-0.69193 0.79889-1.0745 1.8206-1.0742 2.8789v0.0039c0.0039 1.1638 0.4696 2.28 1.2949 3.1016l4.7969 4.8086c1.0456 1.0456 2.7709 1.0456 3.8164 0l4.7969-4.8086 2e-3 -0.00195c0.82412-0.82142 1.289-1.9367 1.2929-3.0996v-0.0039c2.97e-4 -1.0583-0.3823-2.08-1.0742-2.8789-0.83461-0.96262-2.0475-1.5178-3.3223-1.5176-1.1654-1.245e-4 -2.2847 0.46265-3.1094 1.2871l-0.49414 0.49414-0.49414-0.49414c-0.82468-0.82442-1.944-1.2872-3.1094-1.2871zm0 2c0.63643-7.07e-5 1.2457 0.25169 1.6953 0.70117l1.9082 1.9082 1.9082-1.9082c0.44954-0.44944 1.0588-0.70124 1.6953-0.70117 0.6958-1.413e-4 1.3543 0.29994 1.8105 0.82617 0.37781 0.43622 0.58564 0.99276 0.58594 1.5684-0.0026 0.63489-0.25556 1.242-0.70508 1.6895l-2e-3 0.00195-4.8008 4.8105c-0.28089 0.27924-0.70592 0.28041-0.98633 0l-4.7988-4.8105-0.0019532-0.0019531c-0.44957-0.44755-0.70246-1.0545-0.70508-1.6895 2.918e-4 -0.57562 0.20814-1.1322 0.58594-1.5684 0.4562-0.52621 1.1148-0.82633 1.8105-0.82617z" />
+                            </svg>
+                            <span class="rating-positive">
+                                Mostly positive (51) 
+                            </span>
+                            <span class="w-bullet a-hide-min">
+                            </span>
+                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
+                                <path d="m8 11-4.668-4.1836c-0.41096-0.36892-0.44506-1.0011-0.076172-1.4121 0.36836-0.41154 1.0006-0.44652 1.4121-0.078125l2.332 2.0918v-5.418c0-0.554 0.446-1 1-1s1 0.446 1 1v5.418l2.332-2.0918c0.41151-0.36839 1.0438-0.33341 1.4121 0.078125 0.36889 0.41098 0.33479 1.0432-0.07617 1.4121zm-6 2c-0.554 0-1 0.446-1 1s0.446 1 1 1h12c0.554 0 1-0.446 1-1s-0.446-1-1-1z" />
+                            </svg>
+                            <span>
+                                1.6K 
+                            </span>
+                            <span class="w-bullet a-hide-min">
+                            </span>
+                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
+                                <path d="m11.889 4.1109c-2.1479-2.1479-5.6303-2.1479-7.7782 0s-2.1479 5.6303 0 7.7782c2.1479 2.1479 5.6303 2.1479 7.7782 0 0.39052-0.39052 0.39052-1.0237 0-1.4142s-1.0237-0.39052-1.4142 0c-1.3668 1.3668-3.5829 1.3668-4.9497 0-1.3668-1.3668-1.3668-3.5829 0-4.9497s3.5829-1.3668 4.9497 0l-1.7678 1.7678h3.9498c0.55228 0 1-0.44773 0.99999-0.99999v-3.9498z" />
+                            </svg>
+                            <span>
+                                1 month ago 
+                            </span>
+                        </section>
+                    </footer>
+                </a>
+                <a class="pack-card" href="/pack.html">
+                    <header>
+                        <div class="label-trending">
+                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
+                                <path d="m8 0a8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8 8 8 0 0 0-8-8zm0 2a1.5 6 0 0 1 1.4785 5h-2.957a1.5 6 0 0 1 1.4785-5zm2.5742 0.58008a6 6 0 0 1 3.3398 4.4199h-2.4473a3.5 8 0 0 0-0.89258-4.4199zm-5.1426 0.0097657a3.5 8 0 0 0-0.89648 4.4102h-2.4453a6 6 0 0 1 3.3418-4.4102zm-3.3418 6.4102h2.4453a3.5 8 0 0 0 0.89648 4.4102 6 6 0 0 1-3.3418-4.4102zm4.4316 0h2.957a1.5 6 0 0 1-1.4785 5 1.5 6 0 0 1-1.4785-5zm4.9434 0h2.4453a6 6 0 0 1-3.3418 4.4102 3.5 8 0 0 0 0.89648-4.4102z" fill-rule="evenodd" />
+                            </svg>
+                            <span>
+                                TRENDING 
+                            </span>
+                        </div>
+                    </header>
+                    <img src="/assets/images/pack_1_thumb.jpg" width="384" height="216" alt="thumbnail" />
+                    <footer>
+                        <section>
+                            <span>
+                                1.18 — 1.21.1 
+                            </span>
+                            <span class="w-bullet">
+                            </span>
+                            <span>
+                                Technology 
+                            </span>
+                        </section>
+                        <div>
+                            <h3>
+                                My cool datapack 
+                            </h3>
+                            <p>
+                                Updates the vanilla dungeons with new builds and added locate commands 
+                            </p>
+                        </div>
+                        <section class="metadata">
+                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor" class="rating-positive">
+                                <path d="m4.3965 1.4492c-1.2748-2.912e-4 -2.4877 0.55489-3.3223 1.5176-0.69193 0.79889-1.0745 1.8206-1.0742 2.8789v0.0039c0.0039 1.1638 0.4696 2.28 1.2949 3.1016l4.7969 4.8086c1.0456 1.0456 2.7709 1.0456 3.8164 0l4.7969-4.8086 2e-3 -0.00195c0.82412-0.82142 1.289-1.9367 1.2929-3.0996v-0.0039c2.97e-4 -1.0583-0.3823-2.08-1.0742-2.8789-0.83461-0.96262-2.0475-1.5178-3.3223-1.5176-1.1654-1.245e-4 -2.2847 0.46265-3.1094 1.2871l-0.49414 0.49414-0.49414-0.49414c-0.82468-0.82442-1.944-1.2872-3.1094-1.2871zm0 2c0.63643-7.07e-5 1.2457 0.25169 1.6953 0.70117l1.9082 1.9082 1.9082-1.9082c0.44954-0.44944 1.0588-0.70124 1.6953-0.70117 0.6958-1.413e-4 1.3543 0.29994 1.8105 0.82617 0.37781 0.43622 0.58564 0.99276 0.58594 1.5684-0.0026 0.63489-0.25556 1.242-0.70508 1.6895l-2e-3 0.00195-4.8008 4.8105c-0.28089 0.27924-0.70592 0.28041-0.98633 0l-4.7988-4.8105-0.0019532-0.0019531c-0.44957-0.44755-0.70246-1.0545-0.70508-1.6895 2.918e-4 -0.57562 0.20814-1.1322 0.58594-1.5684 0.4562-0.52621 1.1148-0.82633 1.8105-0.82617z" />
+                            </svg>
+                            <span class="rating-positive">
+                                Mostly positive (51) 
+                            </span>
+                            <span class="w-bullet a-hide-min">
+                            </span>
+                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
+                                <path d="m8 11-4.668-4.1836c-0.41096-0.36892-0.44506-1.0011-0.076172-1.4121 0.36836-0.41154 1.0006-0.44652 1.4121-0.078125l2.332 2.0918v-5.418c0-0.554 0.446-1 1-1s1 0.446 1 1v5.418l2.332-2.0918c0.41151-0.36839 1.0438-0.33341 1.4121 0.078125 0.36889 0.41098 0.33479 1.0432-0.07617 1.4121zm-6 2c-0.554 0-1 0.446-1 1s0.446 1 1 1h12c0.554 0 1-0.446 1-1s-0.446-1-1-1z" />
+                            </svg>
+                            <span>
+                                1.6K 
+                            </span>
+                            <span class="w-bullet a-hide-min">
+                            </span>
+                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
+                                <path d="m11.889 4.1109c-2.1479-2.1479-5.6303-2.1479-7.7782 0s-2.1479 5.6303 0 7.7782c2.1479 2.1479 5.6303 2.1479 7.7782 0 0.39052-0.39052 0.39052-1.0237 0-1.4142s-1.0237-0.39052-1.4142 0c-1.3668 1.3668-3.5829 1.3668-4.9497 0-1.3668-1.3668-1.3668-3.5829 0-4.9497s3.5829-1.3668 4.9497 0l-1.7678 1.7678h3.9498c0.55228 0 1-0.44773 0.99999-0.99999v-3.9498z" />
+                            </svg>
+                            <span>
+                                1 month ago 
+                            </span>
+                        </section>
+                    </footer>
+                </a>
+                <a class="pack-card" href="/pack.html">
+                    <header>
+
+                    </header>
+                    <img src="/assets/images/pack_1_thumb.jpg" width="384" height="216" alt="thumbnail" />
+                    <footer>
+                        <section>
+                            <span>
+                                1.18 — 1.21.1 
+                            </span>
+                            <span class="w-bullet">
+                            </span>
+                            <span>
+                                Technology 
+                            </span>
+                        </section>
+                        <div>
+                            <h3>
+                                My cool datapack 
+                            </h3>
+                            <p>
+                                Updates the vanilla dungeons with new builds and added locate commands 
+                            </p>
+                        </div>
+                        <section class="metadata">
+                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor" class="rating-positive">
+                                <path d="m4.3965 1.4492c-1.2748-2.912e-4 -2.4877 0.55489-3.3223 1.5176-0.69193 0.79889-1.0745 1.8206-1.0742 2.8789v0.0039c0.0039 1.1638 0.4696 2.28 1.2949 3.1016l4.7969 4.8086c1.0456 1.0456 2.7709 1.0456 3.8164 0l4.7969-4.8086 2e-3 -0.00195c0.82412-0.82142 1.289-1.9367 1.2929-3.0996v-0.0039c2.97e-4 -1.0583-0.3823-2.08-1.0742-2.8789-0.83461-0.96262-2.0475-1.5178-3.3223-1.5176-1.1654-1.245e-4 -2.2847 0.46265-3.1094 1.2871l-0.49414 0.49414-0.49414-0.49414c-0.82468-0.82442-1.944-1.2872-3.1094-1.2871zm0 2c0.63643-7.07e-5 1.2457 0.25169 1.6953 0.70117l1.9082 1.9082 1.9082-1.9082c0.44954-0.44944 1.0588-0.70124 1.6953-0.70117 0.6958-1.413e-4 1.3543 0.29994 1.8105 0.82617 0.37781 0.43622 0.58564 0.99276 0.58594 1.5684-0.0026 0.63489-0.25556 1.242-0.70508 1.6895l-2e-3 0.00195-4.8008 4.8105c-0.28089 0.27924-0.70592 0.28041-0.98633 0l-4.7988-4.8105-0.0019532-0.0019531c-0.44957-0.44755-0.70246-1.0545-0.70508-1.6895 2.918e-4 -0.57562 0.20814-1.1322 0.58594-1.5684 0.4562-0.52621 1.1148-0.82633 1.8105-0.82617z" />
+                            </svg>
+                            <span class="rating-positive">
+                                Mostly positive (51) 
+                            </span>
+                            <span class="w-bullet a-hide-min">
+                            </span>
+                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
+                                <path d="m8 11-4.668-4.1836c-0.41096-0.36892-0.44506-1.0011-0.076172-1.4121 0.36836-0.41154 1.0006-0.44652 1.4121-0.078125l2.332 2.0918v-5.418c0-0.554 0.446-1 1-1s1 0.446 1 1v5.418l2.332-2.0918c0.41151-0.36839 1.0438-0.33341 1.4121 0.078125 0.36889 0.41098 0.33479 1.0432-0.07617 1.4121zm-6 2c-0.554 0-1 0.446-1 1s0.446 1 1 1h12c0.554 0 1-0.446 1-1s-0.446-1-1-1z" />
+                            </svg>
+                            <span>
+                                1.6K 
+                            </span>
+                            <span class="w-bullet a-hide-min">
+                            </span>
+                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
+                                <path d="m11.889 4.1109c-2.1479-2.1479-5.6303-2.1479-7.7782 0s-2.1479 5.6303 0 7.7782c2.1479 2.1479 5.6303 2.1479 7.7782 0 0.39052-0.39052 0.39052-1.0237 0-1.4142s-1.0237-0.39052-1.4142 0c-1.3668 1.3668-3.5829 1.3668-4.9497 0-1.3668-1.3668-1.3668-3.5829 0-4.9497s3.5829-1.3668 4.9497 0l-1.7678 1.7678h3.9498c0.55228 0 1-0.44773 0.99999-0.99999v-3.9498z" />
+                            </svg>
+                            <span>
+                                1 month ago 
+                            </span>
+                        </section>
+                    </footer>
+                </a>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <section style="grid-area: about;">
+                <h2>
+                    ABOUT 
+                </h2>
+                <a href>
+                    About Smithed 
+                </a>
+                <a href>
+                    How to Contribute 
+                </a>
+                <a href>
+                    Donate 
+                </a>
+            </section>
+            <section style="grid-area: community;">
+                <h2>
+                    COMMUNITY 
+                </h2>
+                <a href>
+                    Discord 
+                </a>
+                <a href>
+                    Guidelines 
+                </a>
+                <a href>
+                    Wiki 
+                </a>
+            </section>
+            <section style="grid-area: legal;">
+                <h2>
+                    LEGAL 
+                </h2>
+                <a href>
+                    Terms of Use 
+                </a>
+                <a href>
+                    Privacy Policy 
+                </a>
+                <a href>
+                    Cookies 
+                </a>
+            </section>
+        </div>
+        <footer style="grid-area: footnote;">
+            <b>
+                Copyright © 2025 Smithed 
+            </b>
+            <p>
+                Not an official Minecraft product. Not approved by or associated with Mojang Studios 
+            </p>
+        </footer>
+    </footer>
+</body>
+
+</html>

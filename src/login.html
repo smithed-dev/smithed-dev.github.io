@@ -10,13 +10,17 @@
         <mend:include src="components/logo.svg" :size="128" @class="a-hide-portrait" />
         <section>
             <mend:extend src="components/field.html" :name="email" :help="Provide a valid email address">
-                <mend:include src="components/icons/symbol_at.svg" />
-                <input type="text" placeholder="example@smithed.net" />
+                <div class="w-input">
+                    <mend:include src="components/icons/symbol_at.svg" />
+                    <input type="text" placeholder="example@smithed.net" />
+                </div>
             </mend:extend>
             <mend:extend src="components/field.html" :name="password"
                 :help="The password you used to create your account">
-                <mend:include src="components/icons/key.svg" />
-                <input type="password" placeholder="Password" />
+                <div class="w-input">
+                    <mend:include src="components/icons/key.svg" />
+                    <input type="password" placeholder="Password" />
+                </div>
             </mend:extend>
             <section>
                 <span class="fill"></span>

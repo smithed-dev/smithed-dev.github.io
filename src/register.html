@@ -11,22 +11,30 @@
         <section>
             <mend:extend src="components/field.html" :name="username"
                 :help="Will be both the handle and the display name of your profile">
-                <mend:include src="components/icons/user.svg" />
-                <input type="text" placeholder="Username" />
+                <div class="w-input">
+                    <mend:include src="components/icons/user.svg" />
+                    <input type="text" placeholder="Username" />
+                </div>
             </mend:extend>
             <mend:extend src="components/field.html" :name="email" :help="Provide a valid email address">
-                <mend:include src="components/icons/symbol_at.svg" />
-                <input type="text" placeholder="example@smithed.net" />
+                <div class="w-input">
+                    <mend:include src="components/icons/symbol_at.svg" />
+                    <input type="text" placeholder="example@smithed.net" />
+                </div>
             </mend:extend>
             <mend:extend src="components/field.html" :name="password"
                 :help="The password you used to create your account">
-                <mend:include src="components/icons/key.svg" />
-                <input type="password" placeholder="Password" />
+                <div class="w-input">
+                    <mend:include src="components/icons/key.svg" />
+                    <input type="password" placeholder="Password" />
+                </div>
             </mend:extend>
             <mend:extend src="components/field.html" :name="confirm password"
                 :help="Write the same password again to ensure you haven't made a typo">
-                <mend:include src="components/icons/key.svg" />
-                <input type="password" placeholder="Confirm password" />
+                <div class="w-input">
+                    <mend:include src="components/icons/key.svg" />
+                    <input type="password" placeholder="Confirm password" />
+                </div>
             </mend:extend>
             <section>
                 <mend:extend src="components/button/regular.html" :label="GitHub login" @style="flex: 1;">

@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta name="viewport" content="user-scalable=yes, initial-scale=1.0, width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>
+        Smithed™ (bbfh.me edition) 
+    </title>
+    <!-- The checksum is automatically generated,
+        it's just used to make sure the browser's cache gets updated when the file changes -->
+    <link rel="stylesheet" href="/assets/styles.min.css?checksum=6657276dafbc674e13a6998817a80b4e" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&family=Lexend:wght@100..900&family=Rubik:wght@700&display=swap" />
+    <script src="/assets/script.js" defer>
+    </script>
+</head>
+<body>
+    <header>
+        <a class="w-logotype" href="/" style="grid-area: logotype;">
+            <svg width="32" height="32" style="min-width: 32px; min-height: 32px;" version="1.1" viewbox="0 0 4 4" xmlns="http://www.w3.org/2000/svg">
+                <g fill="currentColor">
+                    <path transform="matrix(1.3713 0 0 1.3713 -.74255 -.78291)" d="m0.7368 0.88846 0.88662-0.28492a0.49739 0.49739 180 0 1 0.30432-9.22e-6l1.3355 0.42907-1.0396 0.33429z" />
+                    <path transform="matrix(1.3713 0 0 1.3713 -.74255 -.78291)" d="m0.5415 1.0766v0.48676a0.24264 0.24264 0 0 0 0.16842 0.23109l1.5137 0.48676 7.121e-4 -3.561e-4 1.0657-0.34184a0.24251 0.24251 0 0 0 0.16842-0.23109v-0.48676l-1.2338 0.39133h-3.561e-4l-1.6828-0.5359z" />
+                    <path d="m1.1792 2.3262v0.51953l1.1284 0.36279 0.56445-0.18115v-0.51953l-0.56445 0.17432-1.1284-0.35596z" opacity=".5" />
+                    <path transform="matrix(1.3713 0 0 1.3713 -.74255 -.78291)" d="m0.95242 2.7722v0.29839l1.2719 0.40842 0.82325-0.26421v-0.29946l-0.82325 0.25922-1.2719-0.40237z" />
+                </g>
+            </svg>
+            <h2 class="a-hide-widescreen a-show-portrait a-hide-min">
+                Smithed 
+            </h2>
+        </a>
+        <a class="w-header-link" href="/" style="grid-area: browse;">
+            <span>
+                Browse 
+            </span>
+
+        </a>
+        <a class="w-header-link" href="/" style="grid-area: articles;">
+            <span>
+                Articles 
+            </span>
+
+        </a>
+        <a class="w-header-link" href="/" style="grid-area: weld;">
+            <span>
+                Weld 
+            </span>
+            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor" class="a-hide-landscape a-show-portrait">
+                <path d="m6 2c-2.216 0-4 1.784-4 4v4c0 2.216 1.784 4 4 4h4c2.216 0 4-1.784 4-4h-2c0 1.108-0.892 2-2 2h-4c-1.108 0-2-0.892-2-2v-4c0-1.108 0.892-2 2-2v-2zm2 0v2h2c0.17886 0 0.35087 0.02667 0.51562 0.070312l-3.2227 3.2227a1 1 0 0 0 0 1.4141 1 1 0 0 0 1.4141 0l3.2227-3.2227c0.043642 0.16476 0.070312 0.33677 0.070312 0.51562v2h2v-2c0-2.216-1.784-4-4-4h-2z" />
+            </svg>
+        </a>
+        <div class="w-input flex" style="grid-area: search;">
+            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor" data-mode="packs">
+                <path d="m10 7a3 3 0 0 1-3 3 3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3zm-3-5a5 5 0 0 0-5 5 5 5 0 0 0 5 5 5 5 0 0 0 2.7539-0.83203l2.5391 2.5391c0.39052 0.39052 1.0235 0.39052 1.4141 0 0.39052-0.39052 0.39052-1.0235 0-1.4141l-2.5391-2.5391a5 5 0 0 0 0.83203-2.7539 5 5 0 0 0-5-5z" fill-rule="evenodd" />
+            </svg>
+            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor" data-mode="users" style="display: none;">
+                <path d="m8 0a8 8 0 00-8 8 8 8 0 008 8 1 1 0 001-1 1 1 0 00-1-1 6 6 0 01-6-6 6 6 0 016-6 6 6 0 016 6v1a1 1 0 01-1 1 1 1 0 01-1-1v-1a4 4 0 00-4-4 4 4 0 00-4 4 4 4 0 004 4 4 4 0 002.710938-1.068359 3 3 0 002.289062 1.068359 3 3 0 003-3v-1a8 8 0 00-8-8zm0 6a2 2 0 012 2 2 2 0 01-2 2 2 2 0 01-2-2 2 2 0 012-2z" fill-rule="evenodd" />
+            </svg>
+            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor" data-mode="bundles" style="display: none;">
+                <path d="m5-1.6e-8 -0.49998 4h-2.5c-0.554 0-1 0.446-1 1 3e-6 0.554 0.446 1 1 1h2.25l-0.49998 4h-1.75c-0.554 0-1 0.44601-1 1 3e-6 0.554 0.446 1 1 1h1.5l-0.49998 4h2l0.49998-4h4l-0.49998 4h2l0.49998-4h2.5c0.554 0 1-0.446 1-1-3e-6 -0.554-0.446-1-1-1h-2.25l0.49998-4h1.75c0.554 0 1-0.446 1-1-3e-6 -0.554-0.446-1-1-1h-1.5l0.49998-4h-2l-0.49998 4h-4l0.49998-4zm1.25 6h4l-0.49998 4h-4z" />
+            </svg>
+            <input type="text" placeholder="Search..." />
+            <footer class="w-menu list" style="min-width: 16rem;">
+                <div>
+                    Searches for 
+                    <b>
+                        packs by default 
+                    </b>
+                </div>
+                <div>
+                    <em>
+                        @ 
+                    </em>
+                    To search for 
+                    <b>
+                        users 
+                    </b>
+                    and 
+                    <b>
+                        teams 
+                    </b>
+                </div>
+                <div>
+                    <em>
+                        # 
+                    </em>
+                    To search for 
+                    <b>
+                        bundles 
+                    </b>
+                </div>
+            </footer>
+        </div>
+        <a class="w-header-link" href="/" style="grid-area: inbox;">
+            <span>
+                Inbox 
+            </span>
+            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor" class="a-hide-landscape a-show-portrait">
+                <path d="m7 0.0019531v2.0996c-2.2746 0.46688-4 2.4912-4 4.8984v1 1.5293l-0.93164 1.0039a0.87297 0.87297 0 0 0 0.64062 1.4668h10.705a0.82843 0.82843 0 0 0 0.58594-1.4141l-1-1v-1.5859-1c0-2.4072-1.7254-4.4316-4-4.8984v-2.0996h-2zm1 3.998c1.6687 0 3 1.3313 3 3v1 2h-6v-2-1c0-1.6687 1.3313-3 3-3zm-2 10a2 2 0 0 0 1 1.7324 2 2 0 0 0 2 0 2 2 0 0 0 1-1.7324h-4z" />
+            </svg>
+        </a>
+        <div class="w-dropdown" style="grid-area: account;">
+            <button class="w-header-dropdown" style="grid-area: account;" onclick="openDropdown(this);">
+                <img src="/assets/images/bbfh.jpg" width="32" height="32" alt="logo" />
+                <span class="a-hide-widescreen">
+                    BubbleFish 
+                </span>
+                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor" class="indicator">
+                    <path d="m3.7082 5.292c-0.39173-0.39174-1.0243-0.39174-1.416 0-0.39174 0.39174-0.39174 1.0243 0 1.416l5.707 5.7051 5.707-5.7051c0.39174-0.39174 0.39174-1.0243 0-1.416-0.39173-0.39174-1.0243-0.39174-1.416 0l-4.291 4.293z" />
+                </svg>
+            </button>
+            <footer class="w-menu buttons" data-prefer="right">
+                <a class="w-button align-left" href="/profile.html">
+                    <span>
+                        My profile 
+                    </span>
+                    <hr class="vertical" />
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
+                        <path d="m14 15c0 0.55228-0.44772 1-1 1s-1-0.44772-1-1v-3c0-0.554-0.446-1-1-1h-6c-0.554 0-1 0.446-1 1v3c0 0.55228-0.44772 1-1 1s-1-0.44772-1-1v-3c0-1.662 1.338-3 3-3h6c1.662 0 3 1.338 3 3zm-4-11a2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2 2 2 0 0 1 2 2zm2 0a4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4 4 4 0 0 1 4 4z" fill-rule="evenodd" />
+                    </svg>
+                </a>
+                <a class="w-button align-left" href>
+                    <span>
+                        New pack 
+                    </span>
+                    <hr class="vertical" />
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
+                        <path d="m5 0c-1.662 0-3 1.338-3 3v10c0 1.662 1.338 3 3 3h4.992v-0.02148h-2.006v-1.979h-2.986c-0.554 0-1-0.446-1-1v-10c0-0.554 0.446-1 1-1h3v4h4v1.971h2v-2.799l-5.172-5.172h-3.828zm6.992 9.971v1 1.008h-1.006-1v2h1 1.006v1.008 1h2v-1-1.008h1.008 1v-2h-1-1.008v-1.008-1h-2z" />
+                    </svg>
+                </a>
+                <a class="w-button align-left" href>
+                    <span>
+                        New bundle 
+                    </span>
+                    <hr class="vertical" />
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
+                        <path d="m3 0c-1.627 0-3 1.373-3 3v8c0 1.627 1.373 3 3 3h5v-2h-5c-0.554 0-1-0.446-1-1v-6c0-0.554 0.446-1 1-1h10c0.554 0 1 0.446 1 1v3h2v-3c0-1.627-1.373-3-3-3h-4l-2-2h-4zm9 10v2h-2v2h2v2h2v-2h2v-2h-2v-2h-2z" />
+                    </svg>
+                </a>
+                <a class="w-button align-left" href="/settings.html">
+                    <span>
+                        Settings 
+                    </span>
+                    <hr class="vertical" />
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
+                        <path d="m4.5 8c-1.9211482 0-3.5 1.5788518-3.5 3.5 0 1.921148 1.5788518 3.5 3.5 3.5 1.5742853 0 2.9174078-1.060034 3.3515625-2.5h6.1484375a1 1 0 0 0 1-1 1 1 0 0 0-1-1h-6.1484375c-0.4341547-1.4399663-1.7772772-2.5-3.3515625-2.5zm0 2c0.8402701 0 1.5 0.65973 1.5 1.5s-0.6597299 1.5-1.5 1.5-1.5-0.65973-1.5-1.5 0.6597299-1.5 1.5-1.5z" fill-rule="evenodd" />
+                        <path d="m11.5 1c-1.5742853 0-2.9174078 1.0600337-3.3515625 2.5h-6.1484375a1 1 0 0 0-1 1 1 1 0 0 0 1 1h6.1484375c0.4341547 1.4399663 1.7772772 2.5 3.3515625 2.5 1.921148 0 3.5-1.5788518 3.5-3.5s-1.578852-3.5-3.5-3.5zm0 2c0.84027 0 1.5 0.6597299 1.5 1.5s-0.65973 1.5-1.5 1.5-1.5-0.6597299-1.5-1.5 0.65973-1.5 1.5-1.5z" fill-rule="evenodd" />
+                    </svg>
+                </a>
+                <a class="w-button align-left disturbing" href="/login.html">
+                    <span>
+                        Log out 
+                    </span>
+                    <hr class="vertical" />
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
+                        <path d="m5.292 12.292c-0.39174 0.39173-0.39174 1.0243 0 1.416 0.39174 0.39174 1.0243 0.39174 1.416 0l5.7051-5.707-5.7051-5.707c-0.39174-0.39174-1.0243-0.39174-1.416 0-0.39174 0.39173-0.39174 1.0243 0 1.416l4.293 4.291z" />
+                    </svg>
+                </a>
+            </footer>
+        </div>
+    </header>
+    <main class>
+        <section class="l-heading">
+            <h1>
+                Settings 
+            </h1>
+            <p class="centered">
+                Customize your experience & manage your account 
+            </p>
+        </section>
+        <section class="c-tabs" data-tab="site">
+            <header>
+                <button class="w-button align-center tab" id="tab-site" data-selected="true" onclick="switchTab(this)">
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
+                        <path d="m3 1c-1.6274 0-3 1.3726-3 3v8c0 1.6274 1.3726 3 3 3h10c1.6274 0 3-1.3726 3-3v-8c0-1.6274-1.3726-3-3-3zm0 4h10c0.554 0 1 0.446 1 1v6c0 0.554-0.446 1-1 1h-10c-0.554 0-1-0.446-1-1v-6c0-0.554 0.446-1 1-1z" />
+                    </svg>
+                    <hr class="vertical a-hide-portrait" />
+                    <span class="a-hide-portrait">
+                        Site 
+                    </span>
+                </button>
+                <div id="tab-custom-theme" style="display: none;">
+                </div>
+                <button class="w-button align-center tab" id="tab-account" onclick="switchTab(this)">
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
+                        <path d="m14 15c0 0.55228-0.44772 1-1 1s-1-0.44772-1-1v-3c0-0.554-0.446-1-1-1h-6c-0.554 0-1 0.446-1 1v3c0 0.55228-0.44772 1-1 1s-1-0.44772-1-1v-3c0-1.662 1.338-3 3-3h6c1.662 0 3 1.338 3 3zm-4-11a2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2 2 2 0 0 1 2 2zm2 0a4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4 4 4 0 0 1 4 4z" fill-rule="evenodd" />
+                    </svg>
+                    <hr class="vertical a-hide-portrait" />
+                    <span class="a-hide-portrait">
+                        Account 
+                    </span>
+                </button>
+            </header>
+            <section id="page-site">
+                <h2>
+                    Appearance 
+                </h2>
+                <div class="grid-by-three">
+                    <article class="theme-card">
+                        <header>
+                            <input id="theme-dark-default" name="theme" type="radio" checked onchange="setTheme(this)" data-mode="dark" data-theme="default" />
+                            <label for="theme-dark-default">
+                                Dark (Default) 
+                            </label>
+                        </header>
+                        <svg width="242" height="136" version="1.1" viewbox="0 0 256 144" xmlns="http://www.w3.org/2000/svg" style="--theme-shade: #000000; --theme-background: #121212; --theme-card: rgb(255 255 255 / 0.06); --theme-hover: rgb(255 255 255 / 0.12); --theme-border: #424242; --theme-foreground: #ffffff; --palette-accent: #1b48c4;">
+                            <path d="m256 0v136c0 4.432-3.568 8-8 8h-240c-4.432 0-8-3.568-8-8v-136z" fill="var(--theme-background)" />
+                            <path d="m116 8h64c2.216 0 4 1.784 4 4s-1.784 4-4 4h-64c-2.216 0-4-1.784-4-4s1.784-4 4-4z" fill="var(--theme-hover)" />
+                            <path d="m220 8h24c2.216 0 4 1.784 4 4s-1.784 4-4 4h-24c-2.216 0-4-1.784-4-4s1.784-4 4-4z" fill="var(--palette-accent)" />
+                            <path d="m96 30c-5.5054 0-10 4.4946-10 10v24c0 5.5054 4.4946 10 10 10h64c5.5054 0 10-4.4946 10-10v-24c0-5.5054-4.4946-10-10-10h-64zm0 2h64c4.432 0 8 3.568 8 8v24c0 4.432-3.568 8-8 8h-64c-4.432 0-8-3.568-8-8v-24c0-4.432 3.568-8 8-8z" fill="var(--theme-border)" />
+                            <path d="m96 32h64c4.432 0 8 3.568 8 8v24c0 4.432-3.568 8-8 8h-64c-4.432 0-8-3.568-8-8v-24c0-4.432 3.568-8 8-8z" fill="var(--theme-card)" />
+                            <path d="m0 112h256v32h-256z" fill="var(--theme-shade)" />
+                            <path d="m12 8c-2.216 0-4 1.784-4 4s1.784 4 4 4h40c2.216 0 4-1.784 4-4s-1.784-4-4-4h-40zm56 0c-2.216 0-4 1.784-4 4s1.784 4 4 4h8c2.216 0 4-1.784 4-4s-1.784-4-4-4h-8zm24 0c-2.216 0-4 1.784-4 4s1.784 4 4 4h8c2.216 0 4-1.784 4-4s-1.784-4-4-4h-8zm104 0c-2.216 0-4 1.784-4 4s1.784 4 4 4h8c2.216 0 4-1.784 4-4s-1.784-4-4-4h-8zm-124 112c-4.432 0-8 3.568-8 8s3.568 8 8 8h16c4.432 0 8-3.568 8-8s-3.568-8-8-8h-16zm48 0c-4.432 0-8 3.568-8 8s3.568 8 8 8h16c4.432 0 8-3.568 8-8s-3.568-8-8-8h-16zm48 0c-4.432 0-8 3.568-8 8s3.568 8 8 8h16c4.432 0 8-3.568 8-8s-3.568-8-8-8h-16z" fill="var(--theme-foreground)" />
+                        </svg>
+                    </article>
+                    <article class="theme-card">
+                        <header>
+                            <input id="theme-dark-contrast" name="theme" type="radio" onchange="setTheme(this)" data-mode="dark" data-theme="high_contrast" />
+                            <label for="theme-dark-contrast">
+                                Dark (High contrast) 
+                            </label>
+                        </header>
+                        <svg width="242" height="136" version="1.1" viewbox="0 0 256 144" xmlns="http://www.w3.org/2000/svg" style="--theme-shade: #000000; --theme-background: #181818; --theme-card: rgb(255 255 255 / 0.20); --theme-hover: rgb(255 255 255 / 0.40); --theme-border: #B2B2B2; --theme-foreground: #ffffff; --palette-accent: #1b48c4;">
+                            <path d="m256 0v136c0 4.432-3.568 8-8 8h-240c-4.432 0-8-3.568-8-8v-136z" fill="var(--theme-background)" />
+                            <path d="m116 8h64c2.216 0 4 1.784 4 4s-1.784 4-4 4h-64c-2.216 0-4-1.784-4-4s1.784-4 4-4z" fill="var(--theme-hover)" />
+                            <path d="m220 8h24c2.216 0 4 1.784 4 4s-1.784 4-4 4h-24c-2.216 0-4-1.784-4-4s1.784-4 4-4z" fill="var(--palette-accent)" />
+                            <path d="m96 30c-5.5054 0-10 4.4946-10 10v24c0 5.5054 4.4946 10 10 10h64c5.5054 0 10-4.4946 10-10v-24c0-5.5054-4.4946-10-10-10h-64zm0 2h64c4.432 0 8 3.568 8 8v24c0 4.432-3.568 8-8 8h-64c-4.432 0-8-3.568-8-8v-24c0-4.432 3.568-8 8-8z" fill="var(--theme-border)" />
+                            <path d="m96 32h64c4.432 0 8 3.568 8 8v24c0 4.432-3.568 8-8 8h-64c-4.432 0-8-3.568-8-8v-24c0-4.432 3.568-8 8-8z" fill="var(--theme-card)" />
+                            <path d="m0 112h256v32h-256z" fill="var(--theme-shade)" />
+                            <path d="m12 8c-2.216 0-4 1.784-4 4s1.784 4 4 4h40c2.216 0 4-1.784 4-4s-1.784-4-4-4h-40zm56 0c-2.216 0-4 1.784-4 4s1.784 4 4 4h8c2.216 0 4-1.784 4-4s-1.784-4-4-4h-8zm24 0c-2.216 0-4 1.784-4 4s1.784 4 4 4h8c2.216 0 4-1.784 4-4s-1.784-4-4-4h-8zm104 0c-2.216 0-4 1.784-4 4s1.784 4 4 4h8c2.216 0 4-1.784 4-4s-1.784-4-4-4h-8zm-124 112c-4.432 0-8 3.568-8 8s3.568 8 8 8h16c4.432 0 8-3.568 8-8s-3.568-8-8-8h-16zm48 0c-4.432 0-8 3.568-8 8s3.568 8 8 8h16c4.432 0 8-3.568 8-8s-3.568-8-8-8h-16zm48 0c-4.432 0-8 3.568-8 8s3.568 8 8 8h16c4.432 0 8-3.568 8-8s-3.568-8-8-8h-16z" fill="var(--theme-foreground)" />
+                        </svg>
+                    </article>
+                    <article class="theme-card">
+                        <header>
+                            <input id="theme-light-bright" name="theme" type="radio" onchange="setTheme(this)" data-mode="light" data-theme="default" />
+                            <label for="theme-light-bright">
+                                Light (Flashbang) 
+                            </label>
+                        </header>
+                        <svg width="242" height="136" version="1.1" viewbox="0 0 256 144" xmlns="http://www.w3.org/2000/svg" style="--theme-shade: #dadada; --theme-background: #ffffff; --theme-card: rgb(0 0 0 / 0.08); --theme-hover: rgb(0 0 0 / 0.16); --theme-border: #424242; --theme-foreground: #000000; --palette-accent: #1b48c4;">
+                            <path d="m256 0v136c0 4.432-3.568 8-8 8h-240c-4.432 0-8-3.568-8-8v-136z" fill="var(--theme-background)" />
+                            <path d="m116 8h64c2.216 0 4 1.784 4 4s-1.784 4-4 4h-64c-2.216 0-4-1.784-4-4s1.784-4 4-4z" fill="var(--theme-hover)" />
+                            <path d="m220 8h24c2.216 0 4 1.784 4 4s-1.784 4-4 4h-24c-2.216 0-4-1.784-4-4s1.784-4 4-4z" fill="var(--palette-accent)" />
+                            <path d="m96 30c-5.5054 0-10 4.4946-10 10v24c0 5.5054 4.4946 10 10 10h64c5.5054 0 10-4.4946 10-10v-24c0-5.5054-4.4946-10-10-10h-64zm0 2h64c4.432 0 8 3.568 8 8v24c0 4.432-3.568 8-8 8h-64c-4.432 0-8-3.568-8-8v-24c0-4.432 3.568-8 8-8z" fill="var(--theme-border)" />
+                            <path d="m96 32h64c4.432 0 8 3.568 8 8v24c0 4.432-3.568 8-8 8h-64c-4.432 0-8-3.568-8-8v-24c0-4.432 3.568-8 8-8z" fill="var(--theme-card)" />
+                            <path d="m0 112h256v32h-256z" fill="var(--theme-shade)" />
+                            <path d="m12 8c-2.216 0-4 1.784-4 4s1.784 4 4 4h40c2.216 0 4-1.784 4-4s-1.784-4-4-4h-40zm56 0c-2.216 0-4 1.784-4 4s1.784 4 4 4h8c2.216 0 4-1.784 4-4s-1.784-4-4-4h-8zm24 0c-2.216 0-4 1.784-4 4s1.784 4 4 4h8c2.216 0 4-1.784 4-4s-1.784-4-4-4h-8zm104 0c-2.216 0-4 1.784-4 4s1.784 4 4 4h8c2.216 0 4-1.784 4-4s-1.784-4-4-4h-8zm-124 112c-4.432 0-8 3.568-8 8s3.568 8 8 8h16c4.432 0 8-3.568 8-8s-3.568-8-8-8h-16zm48 0c-4.432 0-8 3.568-8 8s3.568 8 8 8h16c4.432 0 8-3.568 8-8s-3.568-8-8-8h-16zm48 0c-4.432 0-8 3.568-8 8s3.568 8 8 8h16c4.432 0 8-3.568 8-8s-3.568-8-8-8h-16z" fill="var(--theme-foreground)" />
+                        </svg>
+                    </article>
+                    <article class="theme-card">
+                        <header>
+                            <input id="theme-light-sand" name="theme" type="radio" onchange="setTheme(this)" data-mode="light" data-theme="sand" />
+                            <label for="theme-light-sand">
+                                Light (Sand) 
+                            </label>
+                        </header>
+                        <svg width="242" height="136" version="1.1" viewbox="0 0 256 144" xmlns="http://www.w3.org/2000/svg" style="--theme-shade: #d5c39f; --theme-background: #fbf0c5; --theme-card: rgb(0 0 0 / 0.08); --theme-hover: rgb(0 0 0 / 0.16); --theme-border: #424242; --theme-foreground: #3c3835; --palette-accent: #1b48c4;">
+                            <path d="m256 0v136c0 4.432-3.568 8-8 8h-240c-4.432 0-8-3.568-8-8v-136z" fill="var(--theme-background)" />
+                            <path d="m116 8h64c2.216 0 4 1.784 4 4s-1.784 4-4 4h-64c-2.216 0-4-1.784-4-4s1.784-4 4-4z" fill="var(--theme-hover)" />
+                            <path d="m220 8h24c2.216 0 4 1.784 4 4s-1.784 4-4 4h-24c-2.216 0-4-1.784-4-4s1.784-4 4-4z" fill="var(--palette-accent)" />
+                            <path d="m96 30c-5.5054 0-10 4.4946-10 10v24c0 5.5054 4.4946 10 10 10h64c5.5054 0 10-4.4946 10-10v-24c0-5.5054-4.4946-10-10-10h-64zm0 2h64c4.432 0 8 3.568 8 8v24c0 4.432-3.568 8-8 8h-64c-4.432 0-8-3.568-8-8v-24c0-4.432 3.568-8 8-8z" fill="var(--theme-border)" />
+                            <path d="m96 32h64c4.432 0 8 3.568 8 8v24c0 4.432-3.568 8-8 8h-64c-4.432 0-8-3.568-8-8v-24c0-4.432 3.568-8 8-8z" fill="var(--theme-card)" />
+                            <path d="m0 112h256v32h-256z" fill="var(--theme-shade)" />
+                            <path d="m12 8c-2.216 0-4 1.784-4 4s1.784 4 4 4h40c2.216 0 4-1.784 4-4s-1.784-4-4-4h-40zm56 0c-2.216 0-4 1.784-4 4s1.784 4 4 4h8c2.216 0 4-1.784 4-4s-1.784-4-4-4h-8zm24 0c-2.216 0-4 1.784-4 4s1.784 4 4 4h8c2.216 0 4-1.784 4-4s-1.784-4-4-4h-8zm104 0c-2.216 0-4 1.784-4 4s1.784 4 4 4h8c2.216 0 4-1.784 4-4s-1.784-4-4-4h-8zm-124 112c-4.432 0-8 3.568-8 8s3.568 8 8 8h16c4.432 0 8-3.568 8-8s-3.568-8-8-8h-16zm48 0c-4.432 0-8 3.568-8 8s3.568 8 8 8h16c4.432 0 8-3.568 8-8s-3.568-8-8-8h-16zm48 0c-4.432 0-8 3.568-8 8s3.568 8 8 8h16c4.432 0 8-3.568 8-8s-3.568-8-8-8h-16z" fill="var(--theme-foreground)" />
+                        </svg>
+                    </article>
+                    <article class="theme-card">
+                        <header>
+                            <input id="theme-custom" name="theme" type="radio" onchange="setTheme(this)" data-mode="light" data-theme="sand" />
+                            <label for="theme-custom">
+                                My theme 
+                            </label>
+                            <button class="w-button small" onclick="alert('copied to clipboard')">
+                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
+                                    <path d="m12 0.0097656c-0.94946 0-1.8983 0.33444-2.6504 1l-3.0586 3.0488c0.23545-0.033621 0.47181-0.052734 0.70898-0.052734 0.61912 0 1.2403 0.11514 1.8262 0.34375l1.7598-1.7598c0.094329-0.094333 0.19684-0.17628 0.30273-0.24805 0.33718-0.22852 0.7234-0.34375 1.1113-0.34375s0.77415 0.11523 1.1113 0.34375c0.10589 0.071764 0.2084 0.15371 0.30273 0.24805 0.038802 0.039458 0.075941 0.080509 0.11133 0.12305 0.02079 0.024401 0.041106 0.049132 0.060547 0.074219l0.001953 0.0019531c0.02583 0.033709 0.050578 0.068231 0.074218 0.10352 0.02357 0.034774 0.045257 0.069673 0.066407 0.10547 0.0013 0.00195 0.002606 0.0038993 0.003906 0.0058593 7.36e-4 0.0012601 0.001153 0.0026463 0.001953 0.0039063 0.36004 0.61759 0.36004 1.3746 0 1.9922-6.65e-4 0.0013-0.001253 0.0026062-0.001953 0.0039062-0.0012 0.0020301-0.002706 0.0038294-0.003906 0.0058594-0.02114 0.035797-0.042827 0.070695-0.066407 0.10547-0.02424 0.035973-0.049642 0.071148-0.076171 0.10547-0.01943 0.025087-0.039757 0.049818-0.060547 0.074219-0.03539 0.042538-0.07253 0.083589-0.11133 0.12305l-3 3c-0.094329 0.094333-0.19684 0.17626-0.30273 0.24805-0.6744 0.45718-1.5483 0.45718-2.2227 0-0.10595-0.071794-0.2084-0.15371-0.30273-0.24805-0.094332-0.094332-0.17626-0.19684-0.24805-0.30273-0.016528-0.024381-0.031542-0.049335-0.046875-0.074219-0.095465-0.030404-0.19271-0.046875-0.29102-0.046875-0.18989 0-0.37793 0.054727-0.55078 0.17188-0.061336 0.041569-0.11329 0.083996-0.15625 0.12695l-0.74023 0.74023c0.16755 0.28603 0.37464 0.55433 0.61914 0.79883 1.5537 1.5537 4.1025 1.5537 5.6562 0l3-3c1.5537-1.5537 1.5537-4.1025 0-5.6562-0.77686-0.77686-1.8023-1.166-2.8281-1.166zm-5 4.9961c-0.94946 0-1.8983 0.33444-2.6504 1l-3.1777 3.166c-1.5537 1.5537-1.5537 4.1025 0 5.6562 1.5537 1.5537 4.1025 1.5537 5.6562 0l2.8848-2.8848c-0.85138 0.1208-1.7274 0.02304-2.5371-0.29102l-1.7617 1.7617c-0.094333 0.094331-0.19684 0.17626-0.30273 0.24805-0.6744 0.45718-1.5483 0.45718-2.2227 0-0.10589-0.071825-0.2084-0.15371-0.30273-0.24805-0.094332-0.09433-0.17626-0.19684-0.24805-0.30273-0.45718-0.6744-0.45718-1.5483 0-2.2227 0.071788-0.1059 0.15371-0.2084 0.24805-0.30273l3-3c0.094332-0.094332 0.19684-0.17628 0.30273-0.24805 0.33718-0.22852 0.7234-0.34375 1.1113-0.34375s0.77415 0.11523 1.1113 0.34375c0.10589 0.071764 0.2084 0.15371 0.30273 0.24805 0.038796 0.039458 0.075937 0.080509 0.11133 0.12305 0.020786 0.024401 0.041114 0.049132 0.060547 0.074219l0.0019531 0.0019531c0.025832 0.033709 0.050585 0.068231 0.074219 0.10352 0.017426 0.025705 0.032922 0.051972 0.048828 0.078125 0.27938 0.089487 0.58131 0.046358 0.83984-0.12891 0.061496-0.041688 0.11335-0.084056 0.15625-0.12695l0.74023-0.74023c-0.16755-0.28603-0.37464-0.55433-0.61914-0.79883-0.77686-0.77686-1.8023-1.166-2.8281-1.166z" />
+                                </svg>
+                            </button>
+                        </header>
+                        <svg width="242" height="136" version="1.1" viewbox="0 0 256 144" xmlns="http://www.w3.org/2000/svg" style="--theme-shade: #000000; --theme-background: #181818; --theme-card: rgb(255 255 255 / 0.20); --theme-hover: rgb(255 255 255 / 0.40); --theme-border: #B2B2B2; --theme-foreground: #ffffff; --palette-accent: #1b48c4;">
+                            <path d="m256 0v136c0 4.432-3.568 8-8 8h-240c-4.432 0-8-3.568-8-8v-136z" fill="var(--theme-background)" />
+                            <path d="m116 8h64c2.216 0 4 1.784 4 4s-1.784 4-4 4h-64c-2.216 0-4-1.784-4-4s1.784-4 4-4z" fill="var(--theme-hover)" />
+                            <path d="m220 8h24c2.216 0 4 1.784 4 4s-1.784 4-4 4h-24c-2.216 0-4-1.784-4-4s1.784-4 4-4z" fill="var(--palette-accent)" />
+                            <path d="m96 30c-5.5054 0-10 4.4946-10 10v24c0 5.5054 4.4946 10 10 10h64c5.5054 0 10-4.4946 10-10v-24c0-5.5054-4.4946-10-10-10h-64zm0 2h64c4.432 0 8 3.568 8 8v24c0 4.432-3.568 8-8 8h-64c-4.432 0-8-3.568-8-8v-24c0-4.432 3.568-8 8-8z" fill="var(--theme-border)" />
+                            <path d="m96 32h64c4.432 0 8 3.568 8 8v24c0 4.432-3.568 8-8 8h-64c-4.432 0-8-3.568-8-8v-24c0-4.432 3.568-8 8-8z" fill="var(--theme-card)" />
+                            <path d="m0 112h256v32h-256z" fill="var(--theme-shade)" />
+                            <path d="m12 8c-2.216 0-4 1.784-4 4s1.784 4 4 4h40c2.216 0 4-1.784 4-4s-1.784-4-4-4h-40zm56 0c-2.216 0-4 1.784-4 4s1.784 4 4 4h8c2.216 0 4-1.784 4-4s-1.784-4-4-4h-8zm24 0c-2.216 0-4 1.784-4 4s1.784 4 4 4h8c2.216 0 4-1.784 4-4s-1.784-4-4-4h-8zm104 0c-2.216 0-4 1.784-4 4s1.784 4 4 4h8c2.216 0 4-1.784 4-4s-1.784-4-4-4h-8zm-124 112c-4.432 0-8 3.568-8 8s3.568 8 8 8h16c4.432 0 8-3.568 8-8s-3.568-8-8-8h-16zm48 0c-4.432 0-8 3.568-8 8s3.568 8 8 8h16c4.432 0 8-3.568 8-8s-3.568-8-8-8h-16zm48 0c-4.432 0-8 3.568-8 8s3.568 8 8 8h16c4.432 0 8-3.568 8-8s-3.568-8-8-8h-16z" fill="var(--theme-foreground)" />
+                        </svg>
+                    </article>
+                    <button class="theme-card-placeholder" onclick="SetTabView(this.parentElement.parentElement.parentElement, 'custom-theme')">
+                        <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
+                            <path d="m8 2c-0.554 0-1 0.446-1 1v4h-4c-0.554 0-1 0.446-1 1s0.446 1 1 1h4v4c0 0.554 0.446 1 1 1s1-0.446 1-1v-4h4c0.554 0 1-0.446 1-1s-0.446-1-1-1h-4v-4c0-0.554-0.446-1-1-1z" />
+                        </svg>
+                    </button>
+                </div>
+            </section>
+            <section id="page-custom-theme" style="display: none;">
+                <div class="heading">
+                    <button class="w-button simple" onclick="SetTabView(this.parentElement.parentElement.parentElement, 'site')">
+                        <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
+                            <path d="m10.708 3.7082c0.39174-0.39173 0.39174-1.0243 0-1.416-0.39174-0.39174-1.0243-0.39174-1.416 0l-5.7051 5.707 5.7051 5.707c0.39174 0.39174 1.0243 0.39174 1.416 0 0.39174-0.39173 0.39174-1.0243 0-1.416l-4.293-4.291z" />
+                        </svg>
+                    </button>
+                    <h2>
+                        Add a new theme 
+                    </h2>
+                </div>
+                <div class="grid-by-two">
+                    <div class="w-field">
+                        <header>
+                            <h4>
+                                THEME NAME 
+                            </h4>
+                            <button class="w-button small" onclick="showHelp(this)" data-help>
+                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
+                                    <path d="m8 2c-2.2091 0-4 1.7909-4 4 0 0.55228 0.44772 1 1 1s1-0.44772 1-1c0-1.1046 0.89543-2 2-2 1.1046 0 2 0.89543 2 2s-0.89543 2-2 2c-0.55228 0-1 0.44772-1 1v1c0 0.55228 0.44772 1 1 1s1-0.44772 1-1v-0.13477c1.7633-0.45527 2.9965-2.0441 3-3.8652 0-2.2091-1.7909-4-4-4zm0 9.75a1.25 1.25 0 0 0-1.25 1.25 1.25 1.25 0 0 0 1.25 1.25 1.25 1.25 0 0 0 1.25-1.25 1.25 1.25 0 0 0-1.25-1.25z" />
+                                </svg>
+                            </button>
+                        </header>
+                        <div class="w-input">
+                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
+                                <path d="m8 0a8 8 0 00-8 8 8 8 0 008 8 1 1 0 001-1 1 1 0 00-1-1 6 6 0 01-6-6 6 6 0 016-6 6 6 0 016 6v1a1 1 0 01-1 1 1 1 0 01-1-1v-1a4 4 0 00-4-4 4 4 0 00-4 4 4 4 0 004 4 4 4 0 002.710938-1.068359 3 3 0 002.289062 1.068359 3 3 0 003-3v-1a8 8 0 00-8-8zm0 6a2 2 0 012 2 2 2 0 01-2 2 2 2 0 01-2-2 2 2 0 012-2z" fill-rule="evenodd" />
+                            </svg>
+                            <input type="text" placeholder="My theme" />
+                        </div>
+                    </div>
+                    <div class="w-field">
+                        <header>
+                            <h4>
+                                INHERIT FROM 
+                            </h4>
+                            <button class="w-button small" onclick="showHelp(this)" data-help>
+                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
+                                    <path d="m8 2c-2.2091 0-4 1.7909-4 4 0 0.55228 0.44772 1 1 1s1-0.44772 1-1c0-1.1046 0.89543-2 2-2 1.1046 0 2 0.89543 2 2s-0.89543 2-2 2c-0.55228 0-1 0.44772-1 1v1c0 0.55228 0.44772 1 1 1s1-0.44772 1-1v-0.13477c1.7633-0.45527 2.9965-2.0441 3-3.8652 0-2.2091-1.7909-4-4-4zm0 9.75a1.25 1.25 0 0 0-1.25 1.25 1.25 1.25 0 0 0 1.25 1.25 1.25 1.25 0 0 0 1.25-1.25 1.25 1.25 0 0 0-1.25-1.25z" />
+                                </svg>
+                            </button>
+                        </header>
+                        <div class="w-input w-options">
+                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
+                                <path d="m8 1a7 7 0 0 0-7 7 7 7 0 0 0 7 7 7 7 0 0 0 1-0.07031 7 7 0 0 0 0.2617-0.05859 1 1 0 0 0 0.668-0.9375 1 1 0 0 0-0.0625-0.334l-1.213-3.639a1 1 0 0 1-0.07617-0.3828 1 1 0 0 1 0.07617-0.3828 1 1 0 0 1 0.2168-0.3242 1 1 0 0 1 0.3242-0.2168 1 1 0 0 1 0.3828-0.07617 1 1 0 0 1 0.1309 0.007812 1 1 0 0 1 0.1191 0.02344l0.1328 0.04492 3.689 1.229a1 1 0 0 0 0.2793 0.04688 1 1 0 0 0 0.9883-0.9023 7 7 0 0 0 0.08203-1.027 7 7 0 0 0-7-7zm-0.5 1.5a1.5 1.5 0 0 1 1.5 1.5 1.5 1.5 0 0 1-1.5 1.5 1.5 1.5 0 0 1-1.5-1.5 1.5 1.5 0 0 1 1.5-1.5zm4 2a1.5 1.5 0 0 1 1.5 1.5 1.5 1.5 0 0 1-1.5 1.5 1.5 1.5 0 0 1-1.5-1.5 1.5 1.5 0 0 1 1.5-1.5zm-7.5 1.5a1.5 1.5 0 0 1 1.5 1.5 1.5 1.5 0 0 1-1.5 1.5 1.5 1.5 0 0 1-1.5-1.5 1.5 1.5 0 0 1 1.5-1.5zm2 4a1.5 1.5 0 0 1 1.5 1.5 1.5 1.5 0 0 1-1.5 1.5 1.5 1.5 0 0 1-1.5-1.5 1.5 1.5 0 0 1 1.5-1.5z" />
+                            </svg>
+                            <select>
+                                <option id="dark">
+                                    Dark 
+                                </option>
+                                <option id="dark-high-contrast">
+                                    Dark (High contrast) 
+                                </option>
+                                <option id="light">
+                                    Light (Flashbang) 
+                                </option>
+                                <option id="light-sand">
+                                    Light (Sand) 
+                                </option>
+                            </select>
+                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
+                                <path d="m3.7082 5.292c-0.39173-0.39174-1.0243-0.39174-1.416 0-0.39174 0.39174-0.39174 1.0243 0 1.416l5.707 5.7051 5.707-5.7051c0.39174-0.39174 0.39174-1.0243 0-1.416-0.39173-0.39174-1.0243-0.39174-1.416 0l-4.291 4.293z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <h2>
+                    Theme 
+                </h2>
+                <div class="grid-by-two">
+                    <div class="w-color-picker">
+                        Shade 
+                        <input type="color" value="#000000" />
+                    </div>
+                    <div class="w-color-picker">
+                        Background 
+                        <input type="color" value="#121212" />
+                    </div>
+                    <div class="w-color-picker">
+                        Card 
+                        <input type="color" value="#ffffff" />
+                    </div>
+                    <div class="w-color-picker">
+                        Hover 
+                        <input type="color" value="#ffffff" />
+                    </div>
+                    <div class="w-color-picker">
+                        Inactive 
+                        <input type="color" value="#ffffff" />
+                    </div>
+                    <div class="w-color-picker">
+                        Border 
+                        <input type="color" value="#424242" />
+                    </div>
+                    <div class="w-color-picker">
+                        Cavity 
+                        <input type="color" value="#000000" />
+                    </div>
+                    <div class="w-color-picker">
+                        Foreground 
+                        <input type="color" value="#ffffff" />
+                    </div>
+                </div>
+                <h2>
+                    Palette 
+                </h2>
+                <div class="grid-by-two">
+                    <div class="w-color-picker">
+                        Accent 
+                        <input type="color" value="#1b48c4" />
+                    </div>
+                    <div class="w-color-picker">
+                        Accent (Text) 
+                        <input type="color" value="#1faeff" />
+                    </div>
+                    <div class="w-color-picker">
+                        Warning 
+                        <input type="color" value="#da9d00" />
+                    </div>
+                    <div class="w-color-picker">
+                        Warning (Text) 
+                        <input type="color" value="#da9d00" />
+                    </div>
+                    <div class="w-color-picker">
+                        Success 
+                        <input type="color" value="#008f48" />
+                    </div>
+                    <div class="w-color-picker">
+                        Success (Text) 
+                        <input type="color" value="#008f48" />
+                    </div>
+                    <div class="w-color-picker">
+                        Disturbing 
+                        <input type="color" value="#c41b48" />
+                    </div>
+                    <div class="w-color-picker">
+                        Disturbing (Text) 
+                        <input type="color" value="#ff4f4f" />
+                    </div>
+                    <div class="w-color-picker">
+                        Secondary 
+                        <input type="color" value="#b000bf" />
+                    </div>
+                    <div class="w-color-picker">
+                        Secondary (Text) 
+                        <input type="color" value="#b000bf" />
+                    </div>
+                </div>
+                <div class="items-last">
+                    <button class="w-button align-center accent">
+                        <span>
+                            Save 
+                        </span>
+                        <hr class="vertical" />
+                        <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
+                            <path d="m13 3.5a1 1 0 0 0-0.70703 0.29297l-6.293 6.293-2.293-2.293a1 1 0 0 0-1.4141 0 1 1 0 0 0 0 1.4141l3.707 3.707 7.707-7.707a1 1 0 0 0 0-1.4141 1 1 0 0 0-0.70703-0.29297z" />
+                        </svg>
+                    </button>
+                </div>
+            </section>
+            <section id="page-account" style="display: none;">
+                <h2>
+                    Connections 
+                </h2>
+                <div class="grid-by-two">
+                    <div class="w-field">
+                        <header>
+                            <h4>
+                                GITHUB (BBFH-DEV) 
+                            </h4>
+                            <button class="w-button small" onclick="showHelp(this)" data-help>
+                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
+                                    <path d="m8 2c-2.2091 0-4 1.7909-4 4 0 0.55228 0.44772 1 1 1s1-0.44772 1-1c0-1.1046 0.89543-2 2-2 1.1046 0 2 0.89543 2 2s-0.89543 2-2 2c-0.55228 0-1 0.44772-1 1v1c0 0.55228 0.44772 1 1 1s1-0.44772 1-1v-0.13477c1.7633-0.45527 2.9965-2.0441 3-3.8652 0-2.2091-1.7909-4-4-4zm0 9.75a1.25 1.25 0 0 0-1.25 1.25 1.25 1.25 0 0 0 1.25 1.25 1.25 1.25 0 0 0 1.25-1.25 1.25 1.25 0 0 0-1.25-1.25z" />
+                                </svg>
+                            </button>
+                        </header>
+                        <button class="w-button align-center regular">
+                            <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_489_358)">
+                                    <mask id="mask0_489_358" width="16" height="16" style="mask-type:luminance" maskunits="userSpaceOnUse" x="0" y="0">
+                                        <path d="M16 0H0V16H16V0Z" fill="white" />
+                                    </mask>
+                                    <g mask="url(#mask0_489_358)">
+                                        <path d="M8 0C12.42 0 16 3.58 16 8C15.9996 9.6762 15.4735 11.3101 14.4958 12.6716C13.5182 14.0332 12.1381 15.0539 10.55 15.59C10.15 15.67 10 15.42 10 15.21C10 14.94 10.01 14.08 10.01 13.01C10.01 12.26 9.76 11.78 9.47 11.53C11.25 11.33 13.12 10.65 13.12 7.58C13.12 6.7 12.81 5.99 12.3 5.43C12.38 5.23 12.66 4.41 12.22 3.31C12.22 3.31 11.55 3.09 10.02 4.13C9.38 3.95 8.7 3.86 8.02 3.86C7.34 3.86 6.66 3.95 6.02 4.13C4.49 3.1 3.82 3.31 3.82 3.31C3.38 4.41 3.66 5.23 3.74 5.43C3.23 5.99 2.92 6.71 2.92 7.58C2.92 10.64 4.78 11.33 6.56 11.53C6.33 11.73 6.12 12.08 6.05 12.6C5.59 12.81 4.44 13.15 3.72 11.94C3.57 11.7 3.12 11.11 2.49 11.12C1.82 11.13 2.22 11.5 2.5 11.65C2.84 11.84 3.23 12.55 3.32 12.78C3.48 13.23 4 14.09 6.01 13.72C6.01 14.39 6.02 15.02 6.02 15.21C6.02 15.42 5.87 15.66 5.47 15.59C3.87664 15.0596 2.49073 14.041 1.50889 12.6786C0.527047 11.3163 -0.000880479 9.67931 1.10231e-06 8C1.10231e-06 3.58 3.58 0 8 0Z" fill="white" />
+                                    </g>
+                                </g>
+                                <defs>
+                                    <clippath id="clip0_489_358">
+                                        <rect width="16" height="16" fill="white" />
+                                    </clippath>
+                                </defs>
+                            </svg>
+                            <hr class="vertical" />
+                            <span>
+                                Unlink account 
+                            </span>
+                        </button>
+                    </div>
+                    <div>
+                    </div>
+                </div>
+                <hr />
+                <div class="heading">
+                    <h2>
+                        Tokens 
+                    </h2>
+                    <span class="fill">
+                    </span>
+                    <button class="w-button align-center regular">
+                        <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
+                            <path d="m8 2c-0.554 0-1 0.446-1 1v4h-4c-0.554 0-1 0.446-1 1s0.446 1 1 1h4v4c0 0.554 0.446 1 1 1s1-0.446 1-1v-4h4c0.554 0 1-0.446 1-1s-0.446-1-1-1h-4v-4c0-0.554-0.446-1-1-1z" />
+                        </svg>
+                        <hr class="vertical" />
+                        <span>
+                            New 
+                        </span>
+                    </button>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <section style="grid-area: about;">
+                <h2>
+                    ABOUT 
+                </h2>
+                <a href>
+                    About Smithed 
+                </a>
+                <a href>
+                    How to Contribute 
+                </a>
+                <a href>
+                    Donate 
+                </a>
+            </section>
+            <section style="grid-area: community;">
+                <h2>
+                    COMMUNITY 
+                </h2>
+                <a href>
+                    Discord 
+                </a>
+                <a href>
+                    Guidelines 
+                </a>
+                <a href>
+                    Wiki 
+                </a>
+            </section>
+            <section style="grid-area: legal;">
+                <h2>
+                    LEGAL 
+                </h2>
+                <a href>
+                    Terms of Use 
+                </a>
+                <a href>
+                    Privacy Policy 
+                </a>
+                <a href>
+                    Cookies 
+                </a>
+            </section>
+        </div>
+        <footer style="grid-area: footnote;">
+            <b>
+                Copyright © 2025 Smithed 
+            </b>
+            <p>
+                Not an official Minecraft product. Not approved by or associated with Mojang Studios 
+            </p>
+        </footer>
+    </footer>
+</body>
+
+</html>
