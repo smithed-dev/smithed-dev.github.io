@@ -11,6 +11,8 @@ build:
 	@mend -i '{"main": "wide", "checksum":"$(shell md5sum ./docs/assets/styles.min.css | cut -d ' ' -f1)", "logged_in": true}' ./src/profile_about.html > ./docs/profile_about.html
 	@mend -i '{"main": "wide", "checksum":"$(shell md5sum ./docs/assets/styles.min.css | cut -d ' ' -f1)", "logged_in": true}' ./src/profile_analytics.html > ./docs/profile_analytics.html
 	@mend -i '{"main": "wide", "checksum":"$(shell md5sum ./docs/assets/styles.min.css | cut -d ' ' -f1)", "logged_in": true}' ./src/pack.html > ./docs/pack.html
+	@mend -i '{"main": "", "checksum":"$(shell md5sum ./docs/assets/styles.min.css | cut -d ' ' -f1)", "logged_in": true}' ./src/articles.html > ./docs/articles.html
+	@mend -i '{"main": "", "checksum":"$(shell md5sum ./docs/assets/styles.min.css | cut -d ' ' -f1)", "logged_in": true}' ./src/about.html > ./docs/about.html
 	@echo "Finished building"
 
 watch:

@@ -1,0 +1,16 @@
+<mend:extend src="_root.html">
+    <section class="l-heading">
+        <h1>Articles</h1>
+        <p class="centered">
+            Explore a collection of our articles published by the Smithed Team
+        </p>
+    </section>
+
+    <section class="l-cards">
+        <mend:extend src="components/article_card.html" :img="/assets/images/pack_1_thumb.jpg">
+        </mend:extend>
+        <mend:extend src="components/article_card.html" :img="/assets/images/pack_1_thumb.jpg">
+            <mend:include src="components/pack_new_label.html" />
+        </mend:extend>
+    </section>
+</mend:extend>

@@ -26,7 +26,8 @@
             </a>
 
             <mend:include src="components/button/header.html" :label="Browse" @style="grid-area: browse;" />
-            <mend:include src="components/button/header.html" :label="Articles" @style="grid-area: articles;" />
+            <mend:include src="components/button/header.html" :label="Articles" @style="grid-area: articles;"
+                @href="/articles.html" />
             <mend:extend src="components/button/header.html" :label="Weld" @style="grid-area: weld;">
                 <mend:include src="components/icons/popout.svg" @class="a-hide-landscape a-show-portrait" />
             </mend:extend>
@@ -97,7 +98,7 @@
             <div>
                 <section style="grid-area: about;">
                     <h2>ABOUT</h2>
-                    <a href="">About Smithed</a>
+                    <a href="/about.html">About Smithed</a>
                     <a href="">How to Contribute</a>
                     <a href="">Donate</a>
                 </section>
@@ -119,6 +120,10 @@
                 <p>Not an official Minecraft product. Not approved by or associated with Mojang Studios</p>
             </footer>
         </footer>
+        <section id="global-warning">
+            <mend:include src="components/icons/warning.svg" />
+            This is NOT the official website, it's a redesign demo!
+        </section>
     </body>
 
 </mend:extend>

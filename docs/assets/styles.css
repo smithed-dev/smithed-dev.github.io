@@ -633,6 +633,31 @@ h6 {
 .l-login > section > section > a.not-important {
   color: var(--theme-inactive);
 }
+.l-contributor {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--theme-border);
+  background-color: var(--theme-card);
+  padding: 1rem;
+  border-radius: 1rem;
+  gap: 1rem;
+}
+.l-contributor header {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+.l-contributor header img {
+  border-radius: 1rem;
+}
+.l-contributor footer {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
 @keyframes pack-label {
   from {
     transform: rotate(-5deg);
@@ -909,7 +934,8 @@ h6 {
   --palette-secondary: #b000bf;
   --palette-secondary-text: #b000bf;
   --palette-warning: #da9d00;
-  --palette-warning-text: #da9d00;
+  --palette-warning-text: #FFC940;
+  --palette-warning-transparent: rgba(218, 157, 0, 0.16);
   --palette-success: #008f48;
   --palette-success-text: #008f48;
   --palette-disturbing: #c41b48;
@@ -1171,6 +1197,9 @@ em {
 em.note {
   font-size: 0.75rem;
 }
+.full-width {
+  width: 100%;
+}
 dialog {
   border: none;
   outline: none;
@@ -1213,6 +1242,21 @@ dialog > footer {
 }
 dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.75);
+}
+#global-warning {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  background-color: var(--palette-warning-transparent);
+  border-top: 2px solid var(--palette-warning);
+  border-bottom: 2px solid var(--palette-warning);
+  color: var(--palette-warning-text);
+  font-weight: 400;
+  margin-top: -4rem;
 }
 .a-hide-default {
   display: none;

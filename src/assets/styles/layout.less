@@ -51,3 +51,29 @@
     }
   }
 }
+
+.l-contributor {
+  .flex-col();
+  .bordered();
+  background-color: var(--theme-card);
+  padding: @spacing-h;
+  border-radius: @radius-block;
+  gap: @spacing-h;
+
+  header {
+    .flex-row();
+    gap: @spacing-h;
+    align-items: center;
+
+    img {
+      border-radius: @radius-block;
+    }
+  }
+
+  footer {
+    .flex-row();
+    gap: @spacing-h;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
