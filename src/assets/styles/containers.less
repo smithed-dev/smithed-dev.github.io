@@ -41,6 +41,7 @@
 
 .l-with-sidebar {
   .flex-row();
+  align-items: flex-start;
   gap: 2rem;
   width: 100%;
 
@@ -54,7 +55,8 @@
     }
   }
 
-  aside.stats {
+  aside.stats,
+  aside.browse {
     .flex-col();
     .bordered();
     background-color: var(--theme-card);
@@ -86,6 +88,45 @@
 
     &>hr {
       margin: @spacing-v 0;
+    }
+  }
+
+  aside.browse {
+    font-weight: 400;
+
+    strong {
+      .font-title();
+      font-weight: 700;
+    }
+
+    summary,
+    details>div {
+      .flex-row();
+      align-items: center;
+      gap: @spacing-h;
+      padding: @spacing-v @spacing-h;
+    }
+
+    div.with-badge {
+      padding-top: 0.375rem;
+      padding-bottom: 0.375rem;
+    }
+
+
+    details {
+      .reset();
+      cursor: pointer;
+      border-radius: @radius-field;
+
+      &:hover {
+        background-color: var(--theme-card);
+      }
+
+      &[open] {
+        .indicator {
+          transform: scaleY(-1);
+        }
+      }
     }
   }
 }

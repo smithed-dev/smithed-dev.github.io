@@ -1,0 +1,120 @@
+<mend:extend src="_root.html">
+    <section class="l-inbox-message">
+        <header>
+            <h3>Unread</h3>
+        </header>
+
+        <article class="inbox-notification">
+            <header>
+                <div>
+                    <img src="/assets/images/bbfh.jpg" width="32" height="32" />
+                    <div>
+                        <mend:include src="components/icons/user.svg" />
+                    </div>
+                </div>
+                <strong>BubbleFish</strong>
+                <span class="a-hide-min">has published a new pack!</span>
+            </header>
+            <footer>
+                <div>
+                    <span class="w-bullet"></span>
+                    <span>
+                        Published
+                        <a class="w-link" href="">Smithie-pet v1.0.0</a>
+                    </span>
+                </div>
+            </footer>
+        </article>
+
+        <div class="items-last">
+            <mend:extend src="components/button/accent.html" :label="Mark as read">
+                <mend:include src="components/icons/check.svg" />
+            </mend:extend>
+        </div>
+    </section>
+
+    <section class="l-separator">
+        <hr />
+        Notifications history
+        <hr />
+    </section>
+
+    <section class="l-inbox-message">
+        <header>
+            <h3>Today</h3>
+        </header>
+
+        <article class="inbox-notification">
+            <header>
+                <div>
+                    <img src="/assets/images/bbfh.jpg" width="32" height="32" />
+                    <div>
+                        <mend:include src="components/icons/clock.svg" />
+                    </div>
+                </div>
+                <strong>MyAmazingDatapack</strong>
+                <span class="a-hide-min">has been updated</span>
+            </header>
+            <footer>
+                <div>
+                    <span class="w-bullet"></span>
+                    <span>
+                        Added version
+                        <a class="w-link" href="">1.0.5</a>
+                    </span>
+                </div>
+            </footer>
+        </article>
+
+        <article class="inbox-notification">
+            <header>
+                <div>
+                    <img src="/assets/images/bbfh.jpg" width="32" height="32" />
+                    <div>
+                        <mend:include src="components/icons/clock.svg" />
+                    </div>
+                </div>
+                <strong>Another pack</strong>
+                <span class="a-hide-min">has been updated</span>
+            </header>
+            <footer>
+                <div>
+                    <span class="w-bullet"></span>
+                    <span>
+                        Added version
+                        <a class="w-link" href="">1.0.4</a>
+                    </span>
+                </div>
+            </footer>
+        </article>
+
+    </section>
+
+    <section class="l-inbox-message">
+        <header>
+            <h3>28 March</h3>
+        </header>
+
+        <article class="inbox-notification">
+            <header>
+                <div>
+                    <img src="/assets/images/bbfh.jpg" width="32" height="32" />
+                    <div>
+                        <mend:include src="components/icons/user.svg" />
+                    </div>
+                </div>
+                <strong>BubbleFish</strong>
+                <span class="a-hide-min">has published a new pack!</span>
+            </header>
+            <footer>
+                <div>
+                    <span class="w-bullet"></span>
+                    <span>
+                        Published
+                        <a class="w-link" href="">Smithie-pet v1.0.0</a>
+                    </span>
+                </div>
+            </footer>
+        </article>
+    </section>
+</mend:extend>

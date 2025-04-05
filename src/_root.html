@@ -25,7 +25,8 @@
                 <h2 class="a-hide-widescreen a-show-portrait a-hide-min">Smithed</h2>
             </a>
 
-            <mend:include src="components/button/header.html" :label="Browse" @style="grid-area: browse;" />
+            <mend:include src="components/button/header.html" :label="Browse" @style="grid-area: browse;"
+                @href="/browse.html" />
             <mend:include src="components/button/header.html" :label="Articles" @style="grid-area: articles;"
                 @href="/articles.html" />
             <mend:extend src="components/button/header.html" :label="Weld" @style="grid-area: weld;">
@@ -33,26 +34,29 @@
             </mend:extend>
 
             <div class="w-input flex" style="grid-area: search;">
-                <mend:include src="components/icons/search.svg" @data-mode="packs" />
-                <mend:include src="components/icons/symbol_at.svg" @data-mode="users" @style="display: none;" />
-                <mend:include src="components/icons/hashtag.svg" @data-mode="bundles" @style="display: none;" />
-                <input type="text" placeholder="Search..." />
-                <footer class="w-menu list" style="min-width: 16rem;">
-                    <div>
-                        Searches for <b>packs by default</b>
-                    </div>
-                    <div>
-                        <em>@</em>
-                        To search for <b>users</b> and <b>teams</b>
-                    </div>
-                    <div>
-                        <em>#</em>
-                        To search for <b>bundles</b>
-                    </div>
-                </footer>
+                <mend:unless value="{{ ^.is_browse }}">
+                    <mend:include src="components/icons/search.svg" @data-mode="packs" />
+                    <mend:include src="components/icons/symbol_at.svg" @data-mode="users" @style="display: none;" />
+                    <mend:include src="components/icons/hashtag.svg" @data-mode="bundles" @style="display: none;" />
+                    <input type="text" placeholder="Search..." />
+                    <footer class="w-menu list" style="min-width: 16rem;">
+                        <div>
+                            Searches for <b>packs by default</b>
+                        </div>
+                        <div>
+                            <em>@</em>
+                            To search for <b>users</b> and <b>teams</b>
+                        </div>
+                        <div>
+                            <em>#</em>
+                            To search for <b>bundles</b>
+                        </div>
+                    </footer>
+                </mend:unless>
             </div>
 
-            <mend:extend src="components/button/header.html" :label="Inbox" @style="grid-area: inbox;">
+            <mend:extend src="components/button/header.html" :label="Inbox" @style="grid-area: inbox;"
+                @href="/inbox.html">
                 <mend:include src="components/icons/notification.svg" @class="a-hide-landscape a-show-portrait" />
             </mend:extend>
 
@@ -94,25 +98,27 @@
             <mend:slot />
         </main>
 
+        <section class="fill"></section>
+
         <footer>
             <div>
                 <section style="grid-area: about;">
                     <h2>ABOUT</h2>
                     <a href="/about.html">About Smithed</a>
-                    <a href="">How to Contribute</a>
+                    <a href="/how_to_contribute.html">How to Contribute</a>
                     <a href="">Donate</a>
                 </section>
                 <section style="grid-area: community;">
                     <h2>COMMUNITY</h2>
                     <a href="">Discord</a>
-                    <a href="">Guidelines</a>
+                    <a href="/guidelines.html">Guidelines</a>
                     <a href="">Wiki</a>
                 </section>
                 <section style="grid-area: legal;">
                     <h2>LEGAL</h2>
-                    <a href="">Terms of Use</a>
-                    <a href="">Privacy Policy</a>
-                    <a href="">Cookies</a>
+                    <a href="/terms_of_use.html">Terms of Use</a>
+                    <a href="/privacy_policy.html">Privacy Policy</a>
+                    <a href="/cookies.html">Cookies</a>
                 </section>
             </div>
             <footer style="grid-area: footnote;">
