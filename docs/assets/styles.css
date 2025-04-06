@@ -1,0 +1,272 @@
+.width-content {
+  width: min(96vw, 50rem);
+}
+.font-text {
+  font-family: Lexend, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.font-title {
+  font-family: Rubik, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.f-col {
+  display: flex;
+  flex-direction: column;
+}
+.f-col-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.f-col-stretch {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.f-col-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+ */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  /* My tweaks: */
+  font-size: 1rem;
+  color: inherit;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+:root {
+  --scheme-shade: #000000;
+  --scheme-background: #121212;
+  --scheme-card: rgba(255, 255, 255, 0.06);
+  --scheme-hover: rgba(255, 255, 255, 0.12);
+  --scheme-inactive: rgba(255, 255, 255, 0.33);
+  --scheme-border: #424242;
+  --scheme-cavity: rgba(0, 0, 0, 0.25);
+  --scheme-foreground: #ffffff;
+  --palette-accent: #1b48c4;
+  --palette-accent-text: #1faeff;
+  --palette-accent-block: rgba(27, 72, 196, 0.16);
+  --palette-secondary: #b000bf;
+  --palette-secondary-text: #b000bf;
+  --palette-secondary-block: rgba(176, 0, 191, 0.16);
+  --palette-warning: #da9d00;
+  --palette-warning-text: #ffc940;
+  --palette-warning-block: rgba(218, 157, 0, 0.16);
+  --palette-success: #008f48;
+  --palette-success-text: #008f48;
+  --palette-success-block: rgba(0, 143, 72, 0.16);
+  --palette-disturbing: #c41b48;
+  --palette-disturbing-text: #ff4f4f;
+  --palette-disturbing-block: rgba(196, 27, 72, 0.16);
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: Lexend, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background-color: var(--scheme-background);
+  color: var(--scheme-foreground);
+  gap: 4rem;
+}
+body > main {
+  margin: auto;
+}
+body > footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 2rem;
+  gap: 4rem;
+  background-color: var(--scheme-shade);
+}
+body > footer section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+body > footer > div {
+  width: min(96vw, 50rem);
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: 1fr;
+  gap: 4rem;
+}
+body > footer > div section {
+  gap: 1rem;
+}
+@media only screen and (max-width: 40rem) {
+  body > footer > div {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+body > footer a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: Rubik, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.75rem;
+}
+b {
+  font-weight: 700;
+}
+p {
+  line-height: 1.25;
+}
+em {
+  color: var(--scheme-inactive);
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
+  text-decoration-color: var(--palette-accent-text);
+  text-decoration-thickness: 2px;
+}
+a:focus {
+  color: var(--palette-accent-text);
+}
+.text-center {
+  text-align: center;
+}

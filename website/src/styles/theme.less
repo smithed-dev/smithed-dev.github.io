@@ -1,0 +1,131 @@
+:root {
+    // Should be the darkest/brightest color
+    --scheme-shade: rgb(0, 0, 0);
+    --scheme-background: rgb(18, 18, 18);
+    --scheme-card: rgba(255, 255, 255, 0.06);
+    --scheme-hover: rgba(255, 255, 255, 0.12);
+    // Used for elements that don't require much focus
+    --scheme-inactive: rgba(255, 255, 255, 0.33);
+    --scheme-border: rgb(66, 66, 66);
+    // The opposite of --scheme-card
+    --scheme-cavity: rgba(0, 0, 0, 0.25);
+    --scheme-foreground: rgb(255, 255, 255);
+
+    --palette-accent: rgb(27, 72, 196);
+    --palette-accent-text: rgb(31, 174, 255);
+    --palette-accent-block: rgba(27, 72, 196, 0.16);
+
+    --palette-secondary: rgb(176, 0, 191);
+    --palette-secondary-text: rgb(176, 0, 191);
+    --palette-secondary-block: rgba(176, 0, 191, 0.16);
+
+    --palette-warning: rgb(218, 157, 0);
+    --palette-warning-text: rgb(255, 201, 64);
+    --palette-warning-block: rgba(218, 157, 0, 0.16);
+
+    --palette-success: rgb(0, 143, 72);
+    --palette-success-text: rgb(0, 143, 72);
+    --palette-success-block: rgba(0, 143, 72, 0.16);
+
+    --palette-disturbing: rgb(196, 27, 72);
+    --palette-disturbing-text: rgb(255, 79, 79);
+    --palette-disturbing-block: rgba(196, 27, 72, 0.16);
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    .font-text();
+    .f-col-stretch();
+    background-color: var(--scheme-background);
+    color: var(--scheme-foreground);
+    gap: @spacing-4;
+
+    &>main {
+        margin: auto;
+    }
+
+    &>footer {
+        .f-col-center();
+        padding: @spacing-4 @spacing-2;
+        gap: @spacing-4;
+        background-color: var(--scheme-shade);
+
+        section {
+            .f-col-items();
+        }
+
+        &>div {
+            .width-content();
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            grid-template-rows: 1fr;
+            gap: @spacing-4;
+
+            section {
+                gap: @spacing-1;
+            }
+
+            @media only screen and (max-width: @screen-portrait) {
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+            }
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+h1,
+h2,
+h3,
+h4 {
+    .font-title();
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h4 {
+    font-size: 0.75rem;
+}
+
+b {
+    font-weight: 700;
+}
+
+p {
+    line-height: 1.25;
+}
+
+em {
+    color: var(--scheme-inactive);
+}
+
+a {
+
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+        text-decoration-color: var(--palette-accent-text);
+        text-decoration-thickness: 2px;
+    }
+
+    &:focus {
+        color: var(--palette-accent-text);
+    }
+}

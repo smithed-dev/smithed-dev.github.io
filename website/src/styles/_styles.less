@@ -1,0 +1,46 @@
+@screen-wide: 70rem;
+@screen-content: 50rem;
+@screen-portrait: 40rem;
+@screen-min: 24rem;
+
+@spacing-half: 0.5rem;
+@spacing-1: 1rem;
+@spacing-2: 2rem;
+@spacing-4: 4rem;
+
+.width-content {
+    width: min(100vw - @spacing-4, @screen-content);
+}
+
+.font-text {
+    font-family: Lexend, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.font-title {
+    font-family: Rubik, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.f-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.f-col-center {
+    .f-col();
+    align-items: center;
+}
+
+.f-col-stretch {
+    .f-col();
+    align-items: stretch;
+}
+
+.f-col-items {
+    .f-col();
+    align-items: center;
+    gap: @spacing-half;
+}
+
+@import "reset.less";
+@import "theme.less";
+@import "mods.less";
